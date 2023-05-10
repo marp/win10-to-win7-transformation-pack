@@ -28,11 +28,11 @@ Here are credits to a few:
 - updated version of OpenShell to 4.4.170
 - updated version of 7+ Taskbar Tweaker to 5.14.1
 - updated version of OldNewExplorer to 1.1.19
-- added "![Customizer God]https://www.door2windows.com/customizergod/" 1.7.6.1 for changing taskbar icons
+- added [Customizer God](https://www.door2windows.com/customizergod/) 1.7.6.1 for changing taskbar icons
 - added taskbar icons to replace (experimental)
 
 ### Todo:
-- Restore classic context menu in taskbar ![was working utill 1803 update]https://www.askvg.com/registry-tweaks-for-customizing-windows-10-taskbar-context-menu/
+- Restore classic context menu in taskbar [was working utill 1803 update](https://www.askvg.com/registry-tweaks-for-customizing-windows-10-taskbar-context-menu/)
 - Find way to change user image, if modern control panel is not working (for people which uses Win10 AME)
 - The taskbar icons are a bit too big.
 
