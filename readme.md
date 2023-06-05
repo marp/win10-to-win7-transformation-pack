@@ -23,6 +23,7 @@ Here are credits to a few:
 - Winaero, for making Windows 7 games and apps work on Windows 10. (Not 8GadgetPack, that belongs to someone/something else). Also made Winaero Tweaker, too.
 - Scritperkid2 on DeviantArt, for exporting Windows 7 cursors.
 - NewInfinitePro and fytuf for making the Windows 7 aero theme.
+- ReimuHakurei for making DLL file in Windows shell to disable the dark context menu of Taskbar
 
 ### Changes to original archive:
 - updated version of OpenShell to 4.4.170
@@ -30,9 +31,9 @@ Here are credits to a few:
 - updated version of OldNewExplorer to 1.1.19
 - added [Customizer God](https://www.door2windows.com/customizergod/) 1.7.6.1 for changing taskbar icons
 - added taskbar icons to replace (experimental)
+- added classic context menu in taskbar [Windows 10 Taskbar Context Menu Tweaker](https://www.askvg.com/tip-get-rid-of-dark-context-menu-in-windows-10-taskbar/)
 
 ### Todo:
-- Restore classic context menu in taskbar [was working utill 1803 update](https://www.askvg.com/registry-tweaks-for-customizing-windows-10-taskbar-context-menu/)
 - Find way to change user image, if modern control panel is not working (for people which uses Win10 AME)
 - The taskbar icons are a bit too big.
 
