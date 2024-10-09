@@ -1,11 +1,15 @@
 # Windows 10 to Windows 7 Transformation Pack
 
-This transformation pack is made/compiled by [Windows Saturn](https://youtu.be/91i1F3yzLa00). I only updated programs to latest version and added addional apps, tips.
+This transformation pack contains code made by many different people, check credits for details.
 
-100% working! Tested on Windows 10 22H2.
+This version is not yet tested. Should work Windows 10 22H2.
 
 ### Installation
-Read [this](Readme%20and%20Credits.txt) file and watch [this](https://youtu.be/91i1F3yzLa00).
+1. Install everything from each folder, order is not important.
+2. Copy Windhawk\ResourceRedirect to C:\Windows\ResourceRedirect
+3. Copy Themes\ to C:\Windows\Resources\Themes
+4. (Optional) Install Win7 Games & Apps
+5. Done!
 
 #### Note
 
@@ -25,8 +29,12 @@ Here are credits to a few:
 - NewInfinitePro and fytuf for making the Windows 7 aero theme.
 - ReimuHakurei for making DLL file in Windows shell to disable the dark context menu of Taskbar
 
-### Changes to original archive:
-- updated version of OpenShell to 4.4.170
+### Changelog:
+- updated Winaero Twekaer to 1.63.0.0
+- updated OpenShell to 4.4.191
+- added WindHawk, StartIsBack 2.9.20, DWMBlurGlass, Themes
+- removed Windows Blinds, Windows 7 IconPack By 2013Windows8.1,
+- updated version of OpenShell to 4.4.190
 - updated version of 7+ Taskbar Tweaker to 5.14.1
 - updated version of OldNewExplorer to 1.1.19
 - added [Customizer God](https://www.door2windows.com/customizergod/) 1.7.6.1 for changing taskbar icons

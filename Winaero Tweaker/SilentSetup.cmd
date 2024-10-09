@@ -1,5 +1,5 @@
 cd /d %~dp0
-Set SetupApp=WinaeroTweaker-0.19.1.0-setup.exe
+Set SetupApp=WinaeroTweaker-1.63.0.0-setup.exe
 
 : Install the app silently.
 %SetupApp% /SP- /VERYSILENT
