@@ -1,0 +1,270 @@
+Windows Registry Editor Version 5.00
+
+; Created with Winaero Tweaker 1.62.1.0
+; https://winaero.com
+
+
+[HKEY_CLASSES_ROOT\CLSID\{03A0E2CD-23A9-45ed-968F-6FDA22B2285E}]
+@="New Network Category Custom Page"
+
+[HKEY_CLASSES_ROOT\CLSID\{03A0E2CD-23A9-45ed-968F-6FDA22B2285E}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{7D9239E5-782C-4126-99AD-81F0E8DA8F5C}]
+@="New Network category Options Page"
+
+[HKEY_CLASSES_ROOT\CLSID\{7D9239E5-782C-4126-99AD-81F0E8DA8F5C}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{7DF8EF76-D449-485f-B4EB-58DC96B31EDB}]
+@="HomeGroup Printing Device Class"
+"AppId"="{7DF8EF76-D449-485f-B4EB-58DC96B31EDB}"
+"LocalizedString"=hex(2):40,00,25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,\
+  6f,00,6f,00,74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,70,00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,2c,00,\
+  2d,00,36,00,30,00,35,00,00,00
+
+[HKEY_CLASSES_ROOT\CLSID\{7DF8EF76-D449-485f-B4EB-58DC96B31EDB}\Elevation]
+"Enabled"=dword:00000001
+
+[HKEY_CLASSES_ROOT\CLSID\{7DF8EF76-D449-485f-B4EB-58DC96B31EDB}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,68,00,67,00,\
+  70,00,72,00,69,00,6e,00,74,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Both"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{996d2d72-4c19-47f8-8f58-0bb13e80a659}]
+@="HomeGroup Balloon"
+
+[HKEY_CLASSES_ROOT\CLSID\{996d2d72-4c19-47f8-8f58-0bb13e80a659}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{A09C534C-0057-462E-8402-2A21D38BFCA1}]
+@="New Network category Task"
+
+[HKEY_CLASSES_ROOT\CLSID\{A09C534C-0057-462E-8402-2A21D38BFCA1}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{C2796011-81BA-4148-8FCA-C6643245113F}]
+@="Network Tray SSO"
+
+[HKEY_CLASSES_ROOT\CLSID\{C2796011-81BA-4148-8FCA-C6643245113F}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Both"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{D032FDC6-3736-4AF0-BE08-6F6E52979BBD}]
+@="New Network category Status Page"
+
+[HKEY_CLASSES_ROOT\CLSID\{D032FDC6-3736-4AF0-BE08-6F6E52979BBD}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{03A0E2CD-23A9-45ed-968F-6FDA22B2285E}]
+@="New Network Category Custom Page"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{03A0E2CD-23A9-45ed-968F-6FDA22B2285E}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{7D9239E5-782C-4126-99AD-81F0E8DA8F5C}]
+@="New Network category Options Page"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{7D9239E5-782C-4126-99AD-81F0E8DA8F5C}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{996d2d72-4c19-47f8-8f58-0bb13e80a659}]
+@="HomeGroup Balloon"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{996d2d72-4c19-47f8-8f58-0bb13e80a659}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{A09C534C-0057-462E-8402-2A21D38BFCA1}]
+@="New Network category Task"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{A09C534C-0057-462E-8402-2A21D38BFCA1}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{A09C534C-0057-462E-8402-2A21D38BFCA1}]
+@="New Network category Task"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{A09C534C-0057-462E-8402-2A21D38BFCA1}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{C2796011-81BA-4148-8FCA-C6643245113F}]
+@="Network Tray SSO"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{C2796011-81BA-4148-8FCA-C6643245113F}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Both"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{D032FDC6-3736-4AF0-BE08-6F6E52979BBD}]
+@="New Network category Status Page"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{D032FDC6-3736-4AF0-BE08-6F6E52979BBD}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,00,6e,00,\
+  69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{03A0E2CD-23A9-45ED-968F-6FDA22B2285E}]
+@="New Network Custom Page"
+"Behavior"=dword:00010000
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{7D9239E5-782C-4126-99AD-81F0E8DA8F5C}]
+@="New Network Options Page"
+"Behavior"=dword:00010000
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}]
+@="New Network Category Task"
+"Behavior"=dword:00010022
+"Class Description"="Task"
+"Class Type"=dword:00000002
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}\Children]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}\Children\{21167137-B7E3-40B6-8863-8386E8C05716}]
+@="New Network Category Hook Page"
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"Ordinal"=dword:00000001
+"User Flags"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}]
+@="New Network Category Task"
+"Behavior"=dword:00010022
+"Class Description"="Task"
+"Class Type"=dword:00000002
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}\Children]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}\Children\{21167137-B7E3-40B6-8863-8386E8C05716}]
+@="New Network Category Hook Page"
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"Ordinal"=dword:00000001
+"User Flags"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\XWizards\Components\{D032FDC6-3736-4AF0-BE08-6F6E52979BBD}]
+@="New Network Status Page"
+"Behavior"=dword:00010000
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\XWizards\Components\{03A0E2CD-23A9-45ED-968F-6FDA22B2285E}]
+@="New Network Custom Page"
+"Behavior"=dword:00010000
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\XWizards\Components\{7D9239E5-782C-4126-99AD-81F0E8DA8F5C}]
+@="New Network Options Page"
+"Behavior"=dword:00010000
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}]
+@="New Network Category Task"
+"Behavior"=dword:00010022
+"Class Description"="Task"
+"Class Type"=dword:00000002
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}\Children]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\XWizards\Components\{A09C534C-0057-462E-8402-2A21D38BFCA1}\Children\{21167137-B7E3-40B6-8863-8386E8C05716}]
+@="New Network Category Hook Page"
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"Ordinal"=dword:00000001
+"User Flags"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\XWizards\Components\{D032FDC6-3736-4AF0-BE08-6F6E52979BBD}]
+@="New Network Status Page"
+"Behavior"=dword:00010000
+"Class Description"="Page"
+"Class Type"=dword:00000003
+"File Name"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,\
+  74,00,25,00,5c,00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,70,\
+  00,6e,00,69,00,64,00,75,00,69,00,2e,00,64,00,6c,00,6c,00,00,00
+

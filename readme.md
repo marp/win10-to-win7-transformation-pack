@@ -4,10 +4,19 @@ This transformation pack contains code made by many different people, check cred
 
 This version is not yet tested. Should work Windows 10 22H2.
 
+### Requirements
+For explorer7 you need Windows 7 ISO or DVD, it should match type and language of your system.
+
 ### Installation
 1. Install everything from each folder, order is not important.
-2. Copy Windhawk\ResourceRedirect to C:\Windows\ResourceRedirect
+2. Windhawk
+2.1. Copy `Windhawk\ResourceRedirect` to `C:\Windows\ResourceRedirect`
+2.2. Open Windhawk, install **Resource Redirect**, go to Resource Redirect settings, set Theme folder to: `C:\Windows\ResourceRedirect\`
+3. Install SecureUx and apply the patch
 3. Copy Themes\ to C:\Windows\Resources\Themes
+4. (Optional) ConsoleLogonHook
+4. (Optional) Branding
+4. (Optional) HackBGRT for bootscreen
 4. (Optional) Install Win7 Games & Apps
 5. Done!
 
@@ -40,8 +49,7 @@ Here are credits to a few:
 - added [Customizer God](https://www.door2windows.com/customizergod/) 1.7.6.1 for changing taskbar icons
 - added taskbar icons to replace (experimental)
 - added classic context menu in taskbar [Windows 10 Taskbar Context Menu Tweaker](https://www.askvg.com/tip-get-rid-of-dark-context-menu-in-windows-10-taskbar/)
+- added explorer7
 
 ### Todo:
-- Find way to change user image, if modern control panel is not working (for people which uses Win10 AME)
-- The taskbar icons are a bit too big.
-
+- Control panel from Windows 7

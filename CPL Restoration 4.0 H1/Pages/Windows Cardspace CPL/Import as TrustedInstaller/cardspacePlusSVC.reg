@@ -1,0 +1,184 @@
+Windows Registry Editor Version 5.00
+
+; Created with Winaero Tweaker 1.62.1.0
+; https://winaero.com
+
+
+; Created with Winaero Tweaker 1.55.0.0
+; https://winaero.com
+
+
+[HKEY_CLASSES_ROOT\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}]
+@="CardSpace"
+"System.Software.TasksFileUrl"="Internal"
+"InfoTip"="@C:\\Windows\\System32\\icardres.dll,-4098"
+"LocalizedString"="@C:\\Windows\\System32\\icardres.dll,-4097"
+"System.ApplicationName"="Microsoft.CardSpace"
+"{305CA226-D286-468e-B848-2B2E8E697B74} 2"=dword:00000009
+
+[HKEY_CLASSES_ROOT\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\DefaultIcon]
+@="C:\\Windows\\System32\\icardres.dll,-4096"
+
+[HKEY_CLASSES_ROOT\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\Shell]
+
+[HKEY_CLASSES_ROOT\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\Shell\Open]
+
+[HKEY_CLASSES_ROOT\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\Shell\Open\Command]
+@="C:\\Windows\\System32\\rundll32.exe C:\\Windows\\System32\\infocardcpl.cpl,ManageCardSpace_RunDll"
+
+
+[HKEY_CLASSES_ROOT\Microsoft.InformationCard]
+@="Information Card"
+"InfoTip"="@C:\\Windows\\System32\\icardres.dll,-4161"
+"EditFlags"=dword:0012bff9
+"FriendlyTypeName"="@C:\\Windows\\System32\\icardres.dll,-4162"
+
+[HKEY_CLASSES_ROOT\Microsoft.InformationCard\DefaultIcon]
+@="C:\\Windows\\System32\\icardres.dll,-4112"
+
+[HKEY_CLASSES_ROOT\Microsoft.InformationCard\Shell]
+
+[HKEY_CLASSES_ROOT\Microsoft.InformationCard\Shell\open]
+@="@C:\\Windows\\System32\\icardres.dll,-4160"
+
+[HKEY_CLASSES_ROOT\Microsoft.InformationCard\Shell\open\command]
+@="C:\\Windows\\System32\\rundll32.exe C:\\Windows\\System32\\infocardcpl.cpl,ImportInformationCard_RunDll  %1"
+
+
+[HKEY_CLASSES_ROOT\Microsoft.WindowsCardSpaceBackup]
+@="Information Card Store"
+"InfoTip"="@C:\\Windows\\System32\\icardres.dll,-4145"
+"EditFlags"=dword:0012bff9
+"FriendlyTypeName"="@C:\\Windows\\System32\\icardres.dll,-4146"
+
+[HKEY_CLASSES_ROOT\Microsoft.WindowsCardSpaceBackup\DefaultIcon]
+@="C:\\Windows\\System32\\icardres.dll,-4113"
+
+[HKEY_CLASSES_ROOT\Microsoft.WindowsCardSpaceBackup\Shell]
+
+[HKEY_CLASSES_ROOT\Microsoft.WindowsCardSpaceBackup\Shell\open]
+@="@C:\\Windows\\System32\\icardres.dll,-4144"
+
+[HKEY_CLASSES_ROOT\Microsoft.WindowsCardSpaceBackup\Shell\open\command]
+@="C:\\Windows\\System32\\rundll32.exe C:\\Windows\\System32\\infocardcpl.cpl,ImportInformationCard_RunDll  %1"
+
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}]
+@="CardSpace"
+"System.Software.TasksFileUrl"="Internal"
+"InfoTip"="@C:\\Windows\\SysWOW64\\icardres.dll,-4098"
+"LocalizedString"="@C:\\Windows\\SysWOW64\\icardres.dll,-4097"
+"System.ApplicationName"="Microsoft.CardSpace"
+"{305CA226-D286-468e-B848-2B2E8E697B74} 2"=dword:00000009
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\DefaultIcon]
+@="C:\\Windows\\SysWOW64\\icardres.dll,-4096"
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\Shell]
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\Shell\Open]
+
+[HKEY_CLASSES_ROOT\Wow6432Node\CLSID\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}\Shell\Open\Command]
+@="C:\\Windows\\SysWOW64\\rundll32.exe C:\\Windows\\SysWOW64\\infocardcpl.cpl,ManageCardSpace_RunDll"
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\services\eventlog\Application\CardSpace 3.0.0.0]
+"CategoryCount"=dword:00000001
+"CategoryMessageFile"="C:\\Windows\\System32\\icardres.dll"
+"EventMessageFile"="C:\\Windows\\Microsoft.NET\\Framework64\\v3.0\\Windows Communication Foundation\\ServiceModelEvents.dll;C:\\Windows\\System32\\icardres.dll"
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\eventlog\Application\CardSpace 3.0.0.0]
+"CategoryCount"=dword:00000001
+"CategoryMessageFile"="C:\\Windows\\System32\\icardres.dll"
+"EventMessageFile"="C:\\Windows\\Microsoft.NET\\Framework64\\v3.0\\Windows Communication Foundation\\ServiceModelEvents.dll;C:\\Windows\\System32\\icardres.dll"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{78CB147A-98EA-4AA6-B0DF-C8681F69341C}]
+
+
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\idsvc]
+"DisplayName"="@%systemroot%\\Microsoft.NET\\Framework64\\v3.0\\Windows Communication Foundation\\ServiceModelInstallRC.dll,-8193"
+"ErrorControl"=dword:00000001
+"ImagePath"=hex(2):22,00,25,00,73,00,79,00,73,00,74,00,65,00,6d,00,72,00,6f,00,\
+  6f,00,74,00,25,00,5c,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,\
+  00,2e,00,4e,00,45,00,54,00,5c,00,46,00,72,00,61,00,6d,00,65,00,77,00,6f,00,\
+  72,00,6b,00,36,00,34,00,5c,00,76,00,33,00,2e,00,30,00,5c,00,57,00,69,00,6e,\
+  00,64,00,6f,00,77,00,73,00,20,00,43,00,6f,00,6d,00,6d,00,75,00,6e,00,69,00,\
+  63,00,61,00,74,00,69,00,6f,00,6e,00,20,00,46,00,6f,00,75,00,6e,00,64,00,61,\
+  00,74,00,69,00,6f,00,6e,00,5c,00,69,00,6e,00,66,00,6f,00,63,00,61,00,72,00,\
+  64,00,2e,00,65,00,78,00,65,00,22,00,00,00
+"Start"=dword:00000003
+"Type"=dword:00000020
+"Description"="@%systemroot%\\Microsoft.NET\\Framework64\\v3.0\\Windows Communication Foundation\\ServiceModelInstallRC.dll,-8192"
+"ObjectName"="LocalSystem"
+"ServiceSidType"=dword:00000001
+"RequiredPrivileges"=hex(7):53,00,65,00,54,00,63,00,62,00,50,00,72,00,69,00,76,\
+  00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,00,41,00,73,00,73,00,69,00,\
+  67,00,6e,00,50,00,72,00,69,00,6d,00,61,00,72,00,79,00,54,00,6f,00,6b,00,65,\
+  00,6e,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,\
+  65,00,54,00,61,00,6b,00,65,00,4f,00,77,00,6e,00,65,00,72,00,73,00,68,00,69,\
+  00,70,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,\
+  65,00,42,00,61,00,63,00,6b,00,75,00,70,00,50,00,72,00,69,00,76,00,69,00,6c,\
+  00,65,00,67,00,65,00,00,00,53,00,65,00,52,00,65,00,73,00,74,00,6f,00,72,00,\
+  65,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,\
+  00,49,00,6d,00,70,00,65,00,72,00,73,00,6f,00,6e,00,61,00,74,00,65,00,50,00,\
+  72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,00,00
+"FailureActions"=hex:84,03,00,00,00,00,00,00,00,00,00,00,03,00,00,00,14,00,00,\
+  00,01,00,00,00,c0,d4,01,00,01,00,00,00,e0,93,04,00,00,00,00,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\idsvc\Security]
+"Security"=hex:01,00,14,80,a0,00,00,00,ac,00,00,00,14,00,00,00,30,00,00,00,02,\
+  00,1c,00,01,00,00,00,02,80,14,00,ff,01,0f,00,01,01,00,00,00,00,00,01,00,00,\
+  00,00,02,00,70,00,05,00,00,00,00,00,14,00,ff,01,0f,00,01,01,00,00,00,00,00,\
+  05,12,00,00,00,00,00,18,00,ff,01,03,00,01,02,00,00,00,00,00,05,20,00,00,00,\
+  20,02,00,00,00,00,14,00,8d,00,02,00,01,01,00,00,00,00,00,05,0b,00,00,00,00,\
+  00,14,00,14,00,00,00,01,01,00,00,00,00,00,05,04,00,00,00,00,00,14,00,14,00,\
+  00,00,01,01,00,00,00,00,00,05,06,00,00,00,01,01,00,00,00,00,00,05,12,00,00,\
+  00,01,01,00,00,00,00,00,05,12,00,00,00
+
+
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet003\Services\idsvc]
+"DisplayName"="@%systemroot%\\Microsoft.NET\\Framework64\\v3.0\\Windows Communication Foundation\\ServiceModelInstallRC.dll,-8193"
+"ErrorControl"=dword:00000001
+"ImagePath"=hex(2):22,00,25,00,73,00,79,00,73,00,74,00,65,00,6d,00,72,00,6f,00,\
+  6f,00,74,00,25,00,5c,00,4d,00,69,00,63,00,72,00,6f,00,73,00,6f,00,66,00,74,\
+  00,2e,00,4e,00,45,00,54,00,5c,00,46,00,72,00,61,00,6d,00,65,00,77,00,6f,00,\
+  72,00,6b,00,36,00,34,00,5c,00,76,00,33,00,2e,00,30,00,5c,00,57,00,69,00,6e,\
+  00,64,00,6f,00,77,00,73,00,20,00,43,00,6f,00,6d,00,6d,00,75,00,6e,00,69,00,\
+  63,00,61,00,74,00,69,00,6f,00,6e,00,20,00,46,00,6f,00,75,00,6e,00,64,00,61,\
+  00,74,00,69,00,6f,00,6e,00,5c,00,69,00,6e,00,66,00,6f,00,63,00,61,00,72,00,\
+  64,00,2e,00,65,00,78,00,65,00,22,00,00,00
+"Start"=dword:00000003
+"Type"=dword:00000020
+"Description"="@%systemroot%\\Microsoft.NET\\Framework64\\v3.0\\Windows Communication Foundation\\ServiceModelInstallRC.dll,-8192"
+"ObjectName"="LocalSystem"
+"ServiceSidType"=dword:00000001
+"RequiredPrivileges"=hex(7):53,00,65,00,54,00,63,00,62,00,50,00,72,00,69,00,76,\
+  00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,00,41,00,73,00,73,00,69,00,\
+  67,00,6e,00,50,00,72,00,69,00,6d,00,61,00,72,00,79,00,54,00,6f,00,6b,00,65,\
+  00,6e,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,\
+  65,00,54,00,61,00,6b,00,65,00,4f,00,77,00,6e,00,65,00,72,00,73,00,68,00,69,\
+  00,70,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,\
+  65,00,42,00,61,00,63,00,6b,00,75,00,70,00,50,00,72,00,69,00,76,00,69,00,6c,\
+  00,65,00,67,00,65,00,00,00,53,00,65,00,52,00,65,00,73,00,74,00,6f,00,72,00,\
+  65,00,50,00,72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,53,00,65,\
+  00,49,00,6d,00,70,00,65,00,72,00,73,00,6f,00,6e,00,61,00,74,00,65,00,50,00,\
+  72,00,69,00,76,00,69,00,6c,00,65,00,67,00,65,00,00,00,00,00
+"FailureActions"=hex:84,03,00,00,00,00,00,00,00,00,00,00,03,00,00,00,14,00,00,\
+  00,01,00,00,00,c0,d4,01,00,01,00,00,00,e0,93,04,00,00,00,00,00,00,00,00,00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet003\Services\idsvc\Security]
+"Security"=hex:01,00,14,80,a0,00,00,00,ac,00,00,00,14,00,00,00,30,00,00,00,02,\
+  00,1c,00,01,00,00,00,02,80,14,00,ff,01,0f,00,01,01,00,00,00,00,00,01,00,00,\
+  00,00,02,00,70,00,05,00,00,00,00,00,14,00,ff,01,0f,00,01,01,00,00,00,00,00,\
+  05,12,00,00,00,00,00,18,00,ff,01,03,00,01,02,00,00,00,00,00,05,20,00,00,00,\
+  20,02,00,00,00,00,14,00,8d,00,02,00,01,01,00,00,00,00,00,05,0b,00,00,00,00,\
+  00,14,00,14,00,00,00,01,01,00,00,00,00,00,05,04,00,00,00,00,00,14,00,14,00,\
+  00,00,01,01,00,00,00,00,00,05,06,00,00,00,01,01,00,00,00,00,00,05,12,00,00,\
+  00,01,01,00,00,00,00,00,05,12,00,00,00
+
+

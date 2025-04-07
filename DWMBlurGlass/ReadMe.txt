@@ -10,6 +10,123 @@ If you can't download the symbols, please use a proxy. The symbol server is a Mi
 
 更新日志(Update log):
 
+2.3.1 - 2025-3-12
+增加了一个选项 "关闭Dcomp帧率限制" 在"高级"页面, 允许你解除背景的30帧刷新率限制
+增加了一个内置优化, 标题栏字幕按钮的颜色现在会根据你设置的混合颜色自动切换亮暗样式
+崩溃信息弹窗增加了一个"重试"按钮, 如果dwm崩溃, 可以点击"重试"尝试重新加载DWMBlurGlass
+
+稳定性改善和优化 GUI样式优化
+缩减了生成dump文件时的体积
+
+修复了24H2修改文本颜色无效的bug
+修复启用"还原win7样式标题栏按钮尺寸"后导致按钮错位或dwm概率崩溃的问题
+修复"启用win7样式标题栏按钮发光效果"没有对帮助按钮添加发光效果的问题
+修复Aero效果Alpha颜色不正确的问题
+修复Acrylic效果噪点纹理显示不正确的问题
+修复Luminosity参数在Mica效果下不生效的问题
+修复在启动一些基于Electron框架或者Dcomp合成背景的应用程序缺失预览视图与缩略图 并造成崩溃的问题
+修复在启用"使用系统主题色RGB取代颜色设置RGB"选项时 DWM概率崩溃的问题
+
+Added an option "Disable Dcomp framerate limit" in the "Advanced" page that allows you to disable the 30 fps framerate limit for backgrounds.
+Added a built-in optimization, the caption button color now automatically switches between light and dark styles based on the Blend color you set.
+Added a "Retry" button in the crash message popup window, if dwm crashes, you can click "Retry" to try to reload DWMBlurGlass.
+
+Stability improvement and optimization. GUI style optimization.
+Reduced size when generating dump files.
+
+Fixed the bug that modifying text color in 24H2 is invalid.
+Fixed the issue of button misalignment or DWM probability crash caused by enabling "Restore Win7 style title bar button size".
+Fixed the issue where the "Enable Win7 style title bar button glow" did not add a glow effect to the Question button.
+Fix the issue of incorrect Alpha color of Aero effect.
+Fix the issue of incorrect display of Acrylic effect noise texture.
+Fix the issue that Luminosity parameter doesn't work with Mica effect.
+Fix the issue of missing preview views and thumbnails and causing a crash when launching 
+some applications based on Electron framework or Dcomp composite backgrounds.
+Fix a probable crash of DWM when "Use Accent color to override color settings RGB" option is enabled.
+
+
+翻译更新:
+感谢(按提交顺序):
+Translation Updates.
+Thanks (in order of last submission):
+
+Russian(ru-Ru) - @shikulja
+Spanish(es) - @xoascf
+Italian(it-IT) @LuisYeah1234-hub
+Traditional Chinese(zh-TW) @railyinu
+European Portuguese(pt-PT) @Blackshot3312
+
+2.3.0 - 2024-11-27
+本次版本重构了大部分的代码以带来更好的稳定性和性能
+支持了Windows 11 24H2 #402 #405
+
+增加了新的选项"启用win7样式标题栏按钮发光效果" (仅限CustomBlur方法) #23
+增加了新的选项"在省电模式下关闭效果" 允许你在省电模式下依然启用DWMBlurGlass(仅限CustomBlur方法)
+增加了新的选项"启用模糊渲染优化" 如果启用渲染优化 将降低系统模糊效果的质量以及内核规模来降低GPU使用 但模糊质量会下降 #200 #243 #343
+增加了异常转储功能，如果dwm发生崩溃将在“data\dumps”目录生成存转储文件 在报告bug时将它提供给我们以便开发者分析和解决问题
+将GUI从MiaoUI Core迁移到了开源的MiaoUI Lite 现在你可以自由编译完整的项目包括GUI
+
+优化和修复了Windows10的面剔除优化 默认开启 #200 #243 #343
+
+修复了GUI中修改HEX颜色值不生效的bug #307
+修复了Aero反射在多显示器截断的bug #136 #241 #280
+修复了RTL文本镜像的问题 #138
+修复了部分应用程序的呈现效果不正常 #219 #268 #320
+修复了覆盖Accent功能导致部分应用背景透明的和颜色错误bug #285 #289 #304 #329 #338
+修复了使用系统Accent颜色的情况下重启后没有正确生效的bug #299
+修复了重启dwm进程后没有正确跟随系统透明效果和省电模式选项的bug #301
+
+稳定性改善和优化 #296 #346 #390
+
+翻译更新:
+感谢(按提交顺序)
+Russian(ru-Ru) - @shikulja
+Spanish (es-ES) - @xoascf
+Turkish (tr-TR) - @baglayan
+Italian (it-IT) - @LuisYeah1234-hub
+Korean (ko-KR) - @Longhorn004
+Trad.Chinese (zh-TW) - @railyinu
+Vietnamese (vi-VN) - @reggyxt
+German (de-DE) - @akaydev-coder
+Japanese (ja-JP) - @reshP-0325
+
+#
+
+This release refactors most of the code to bring better stability and performance.
+Added support for Windows 11 24H2. #402 #405
+
+Added new option "Enable Win7 style titlebar button glow" (CustomBlur method only) #23
+Added new option "Disable the effect in power-saving mode" which allows you to enable DWMBlurGlass even in power saving mode.
+Added new option "Enable blur rendering optimization" If Rendering Optimization is enabled, 
+it will reduce the quality of the system blurring effect as well as the kernel size to reduce GPU usage, but the quality of the blurring will be degraded.  #200 #243 #343
+Added an exception dump function, if dwm crashes, a dump file will be generated in the "data\dumps" directory Provide it to us when reporting 
+bugs so that developers can analyze and solve the problem.
+Migrated the GUI from MiaoUI Core to the open source MiaoUI Lite Now you can freely compile complete projects including the GUI.
+
+Optimized and fixed surface culling optimization for Windows 10 On by default.
+
+Fixed the bug that modifying HEX color value in GUI does not take effect. #307
+Fixed the bug that Aero reflections are truncated on multiple monitors. #136 #241 #280
+Fixed issue with RTL text mirroring. #138
+Fixed abnormal rendering of some apps. #219 #268 #320
+Fixed the bug that "Override AccentBlur effect" causes the background of some apps to be transparent and incorrectly colored. #285 #289 #304 #329 #338
+Fixed the bug that "Use Accent color to override color settings RGB" did not work correctly after reboot. #299
+Fixed the bug that restarting the dwm process did not properly follow the system transparency effect and power saving mode options. #301
+
+Stability improvement and optimization.  #296 #346 #390
+
+Translation Updates.
+Thanks (in order of last submission):
+Russian(ru-Ru) - @shikulja
+Spanish (es-ES) - @xoascf
+Turkish (tr-TR) - @baglayan
+Italian (it-IT) - @LuisYeah1234-hub
+Korean (ko-KR) - @Longhorn004
+Trad.Chinese (zh-TW) - @railyinu
+Vietnamese (vi-VN) - @reggyxt
+German (de-DE) - @akaydev-coder
+Japanese (ja-JP) - @reshP-0325
+
 2.2.0 - 2024-4-26
 增加了新AeroBackdrop的GUI设置选项 #234
 增加了动画效果开关，以及动画效果时长的设置选项 #96

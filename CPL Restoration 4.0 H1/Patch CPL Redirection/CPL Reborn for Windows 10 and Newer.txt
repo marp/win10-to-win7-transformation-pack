@@ -1,0 +1,495 @@
+// ==WindhawkMod==
+// @id              cpl-reborn
+// @name            Control Panel Reborn
+// @description     Finally.
+// @version         1.1.3
+// @author          aubymori
+// @github          https://github.com/aubymori
+// @include         explorer.exe
+// @include         control.exe
+// @include         mblctr.exe
+// @include         rundll32.exe
+// @include         DpiScaling.exe
+// @compilerOptions -lpsapi -lcomctl32
+// ==/WindhawkMod==
+
+// ==WindhawkModReadme==
+/*
+# Control Panel Reborn
+Finally.
+*/
+// ==/WindhawkModReadme==
+
+#include <psapi.h>
+#include <windhawk_utils.h>
+#include <winnls.h>
+
+/**
+  * Custom applet order.
+  * Arrays with less than 14 items need to be filled with NULLs
+  * or else the mod will crash.
+  */
+LPCWSTR g_szAppletOrder[][20] =  {
+    /* System and Security */
+    {
+        L"::{BB64F8A7-BEE7-4E1A-AB8D-7D8273F7FDB6}", // Action Center
+        L"::{4026492F-2F69-46B8-B9BF-5654FC07E423}", // Windows Firewall
+        L"::{BB06C0E4-D293-4f75-8A90-CB05B6477EEE}", // System
+        L"::{36eef7db-88ad-4e81-ad49-0e313f0c35f8}", // Windows Update
+        L"::{025A5937-A6BE-4686-A844-36FE4BEC8B6D}", // Power Options
+        L"::{87D66A43-7B11-4A28-9811-C86EE395ACF7}", // Indexing Options
+        L"::{F6B6E965-E9B2-444B-9286-10C9152EDBC5}", // File History
+        L"::{B98A2BEA-7D42-4558-8BD1-832F41BAC6FD}", // Backup and Restore
+        L"::{D9EF8727-CAC2-4e60-809E-86F80A666C91}", // BitLocker Drive Encryption
+        L"::{F942C606-0914-47AB-BE56-1321B8035096}", // Storage Senses
+        L"::{ECDB0924-4208-451E-8EE0-373C0956DE16}", // Work Folders
+        L"::{BE122A0E-4503-11DA-8BDE-F66BAD1E3F3A}", // Windows Anytime Upgrade / Add features to Windows 8.1
+        L"::{78F3955E-3B90-4184-BD14-5397C15F1EFC}", // WEI
+        L"::{74246bfc-4c96-11d0-abef-0020af6b0b7a}", // Device Manager
+        L"::{D20EA4E1-3957-11d2-A40B-0C5020524153}", // Administrative Tools
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* Network and Internet */
+    {
+        L"::{8E908FC9-BECC-40f6-915B-F4CA0E70D03D}", // Network and Sharing Center
+        L"::{67CA7650-96E6-4FDD-BB43-A8E774F73A57}", // HomeGroup
+        L"::{A3DD4F92-658A-410F-84FD-6FBBBEF2FFFE}", // Internet Options
+        L"::{4026492F-2F69-46B8-B9BF-5654FC07E423}", // Windows Firewall
+        L"::{9C73F5E5-7AE7-4E32-A8E8-8D23B85255BF}", // SYNC Center
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* Hardware and Sound */
+    {
+        L"::{2227A280-3AEA-1069-A2DE-08002B30309D}", // Printers
+        L"::{A8A91A66-3A7D-4424-8D24-04E180695C7A}", // Devices and Printers
+        L"::{9C60DE1E-E5FC-40f4-A487-460851A8D915}", // AutoPlay
+        L"::{F2DDFC82-8F12-4CDD-B7DC-D4FE1425AA4D}", // Sound
+        L"::{6C8EEC18-8D75-41B2-A177-8831D59D2D50}", // Mouse
+        L"::{025A5937-A6BE-4686-A844-36FE4BEC8B6D}", // Power Options
+        L"::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}", // Personalization
+        L"::{725BE8F7-668E-4C7B-8F90-46BDB0936430}", // Keyboard
+        L"::{74246bfc-4c96-11d0-abef-0020af6b0b7a}", // Device Manager
+        L"::{40419485-C444-4567-851A-2DD7BFA1684D}", // Phone and Modem
+        L"::{259EF4B1-E6C9-4176-B574-481532C9BCE8}", // Game Controllers
+        L"::{C555438B-3C23-4769-A71F-B6D3D9B6053A}", // Display
+        L"::{5ea4f148-308c-46d7-98a9-49041b1dd468}", // Windows Mobility Center
+        L"::{F82DF8F7-8B9F-442E-A48C-818EA735FF9B}", // Pen and Touch
+        L"::{E9950154-C418-419e-A90A-20C5287AE24B}", // Location Settings
+        L"::{0142e4d0-fb7a-11dc-ba4a-000ffe7ab428}", // Biometric Devices
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* Programs */
+    {
+        L"::{7B81BE6A-CE2B-4676-A29E-EB907A5126C5}", // Programs and Features
+        L"::{17cd9488-1228-4b2f-88ce-4298e93e0966}", // Default Programs
+        L"::{37efd44d-ef8d-41b1-940d-96973a50e9e0}", // Desktop Gadgets
+        L"::{ED7BA470-8E54-465E-825C-99712043E01C}", // GODMODE
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* User Accounts and Family Safety */
+    {
+        L"::{60632754-c523-4b62-b45c-4172da012619}", // User Accounts
+        L"::{96AE8D84-A250-4520-95A5-A47A7E3C548B}", // Parental Controls / Family Safety
+        L"::{78CB147A-98EA-4AA6-B0DF-C8681F69341C}", // Windows CardSpace
+        L"::{1206F5F1-0569-412C-8FEC-3204630DFB70}", // Credential Manager
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* Appearance and Personalization */
+    {
+        L"::{ED834ED6-4B5A-4bfe-8F11-A626DCB6A921}", // Personalization
+        L"::{C555438B-3C23-4769-A71F-B6D3D9B6053A}", // Display
+        L"::{37efd44d-ef8d-41b1-940d-96973a50e9e0}", // Desktop Gadgets
+        L"::{0CA792AE-AB31-4A61-AC12-2C66AA1BA26C}", // Desktop Gadgets(gadgetsrevived)
+        L"::{0DF44EAA-FF21-4412-828E-260A8728E7F1}", // Taskbar and Start Menu / Taskbar and Navigation
+        L"::{D555645E-D4F8-4c29-A827-D93C859C4F2A}", // Ease of Access Center
+        L"::{6DFD7C5C-2451-11d3-A299-00C04F8EF6AF}", // Folder Options
+        L"::{BD84B380-8CA2-1069-AB1D-08000948F534}", // Fonts
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* Clock, Language, and Region */
+    {
+        L"::{E2E7934B-DCE5-43C4-9576-7FE4F75E7480}", // Date and Time
+        L"::{BF782CC9-5A52-4A17-806C-2A894FFEEAC5}", // Language
+        L"::{62d8ed13-c9d0-4ce8-a914-47dd628fb1b0}", // Region and Langauge / Region
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+    /* Ease of Access */
+    {
+        L"::{D555645E-D4F8-4c29-A827-D93C859C4F2A}", // Ease of Access Center
+        L"::{58E3C745-D971-4081-9034-86E34B30836A}", // Speech Recognition
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+        NULL,
+    },
+};
+
+#define CControlPanelAppletList_HDPA(pThis) *((HDPA *)pThis + 2)
+#define CControlPanelAppletList_Category(pThis) *((DWORD *)pThis + 32)
+
+/* Map CPL category ID to array index */
+int MapCategory(int category)
+{
+    switch (category)
+    {
+        /* System and Security */
+        case 5:
+            return 0;
+        /* Network and Internet */
+        case 3:
+            return 1;
+        /* Hardware and Sound */
+        case 2:
+            return 2;
+        /* Programs */
+        case 8:
+            return 3;
+        /* User Accounts and Family Safety */
+        case 9:
+            return 4;
+        /* Appearance and Personalization */
+        case 1:
+            return 5;
+        /* Clock, Language, and Region */
+        case 6:
+            return 6;
+        /* Ease of Access */
+        case 7:
+            return 7;
+        default:
+            return -1;
+    }
+}
+
+int FindApplet(LPCWSTR lpszApplet, int category)
+{
+    for (UINT i = 0; i < ARRAYSIZE(g_szAppletOrder[category]); i++)
+    {
+        if (NULL == g_szAppletOrder[category][i])
+        {
+            break;
+        }
+
+        if (0 == wcsicmp(g_szAppletOrder[category][i], lpszApplet))
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int (*CControlPanelAppletList_s_SortAppletsInCategory_orig)(void *, void *, LPARAM);
+int CControlPanelAppletList_s_SortAppletsInCategory_hook(
+    void   *p1,
+    void   *p2,
+    LPARAM  lParam
+)
+{
+    HDPA hDpa = CControlPanelAppletList_HDPA(lParam);
+    LPVOID pThing1 = DPA_GetPtr(hDpa, *(int *)p1);
+    LPVOID pThing2 = DPA_GetPtr(hDpa, *(int *)p2);
+    int category = MapCategory(CControlPanelAppletList_Category(lParam));
+    if (category >= 0 && hDpa && pThing1 && pThing2)
+    {
+        LPCWSTR pszApplet1 = (LPCWSTR)((char *)pThing1 + 520);
+        LPCWSTR pszApplet2 = (LPCWSTR)((char *)pThing2 + 520);
+        
+        int iApplet1 = FindApplet(pszApplet1, category);
+        if (iApplet1 < 0)
+        {
+            return 1;
+        }
+        else
+        {
+            int iApplet2 = FindApplet(pszApplet2, category);
+            if (iApplet2 >= 0 && iApplet1 > iApplet2)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+    }
+    return 0;
+}
+
+//private: bool __cdecl COpenControlPanel::_MapLegacyName(unsigned short const *,unsigned short *,unsigned int,bool *)
+bool (*COpenControlPanel__MapLegacyName_orig)(void *, LPCWSTR, LPWSTR, UINT, bool *);
+bool COpenControlPanel__MapLegacyName_hook(
+    void    *pThis,
+    LPCWSTR  pszLegacyName,
+    LPWSTR   pszNewName,
+    UINT     uUnused,
+    bool    *nameChanged
+)
+{
+    *nameChanged = false;
+    *pszNewName = L'\0';
+    return false;
+}
+
+LPCWSTR g_szAppletsToUnhide[] = {
+    L"::{BF782CC9-5A52-4A17-806C-2A894FFEEAC5}", // Language Settings
+    L"::{ED834ED6-4B5A-4BFE-8F11-A626DCB6A921}", // Personalization
+    L"::{D9EF8727-CAC2-4e60-809E-86F80A666C91}", // BitLocker Drive Encryption
+    L"::{D17D1D6D-CC3F-4815-8FE3-607E7D5D10B3}", // Text to Speech
+    L"::{E95A4861-D57A-4BE1-AD0F-35267E261739}", // Windows SlideShow (?)
+    L"::{96AE8D84-A250-4520-95A5-A47A7E3C548B}", // Family Safety
+    L"::{BB06C0E4-D293-4f75-8A90-CB05B6477EEE}", // System
+    L"::{A8A91A66-3A7D-4424-8D24-04E180695C7A}", // Devices and Printers
+};
+
+LPCWSTR g_szCanonicalNames[] = {
+    L"Microsoft.Display",
+    L"Microsoft.Personalization",
+    L"Microsoft.Language",
+    L"Microsoft.LocationAndOtherSensors",
+    L"Microsoft.LocationSettings",
+    L"Microsoft.WindowsUpdate",
+    L"Microsoft.Troubleshooting",
+    L"Microsoft.DevicesAndPrinters",
+    L"Microsoft.RegionalAndLanguageOptions",
+    L"Microsoft.System",
+    L"Microsoft.Printers",
+    L"Microsoft.WindowsSideShow",
+};
+
+void KillStringInModule(HMODULE hModule, LPCWSTR lpSearch)
+{
+    if (!lpSearch)
+    {
+        return;
+    }
+
+    MODULEINFO info = { 0 };
+    GetModuleInformation(
+        GetCurrentProcess(),
+        hModule,
+        &info,
+        sizeof(MODULEINFO)
+    );
+
+    DWORD_PTR base = (size_t)info.lpBaseOfDll;
+    size_t size = (size_t)info.SizeOfImage;
+    size_t patternLen = wcslen(lpSearch) * 2;
+
+    for (size_t i = 0; i < size - patternLen; i++)
+    {
+        bool found = true;
+
+        for (size_t j = 0; j < patternLen; j++)
+        {
+            found = *((char *)lpSearch + j) == *(char *)(base + i + j);
+
+            if (!found)
+            {
+                break;
+            }
+        }
+
+        if (found)
+        {
+            size_t ptr = base + i;
+            MEMORY_BASIC_INFORMATION mbi;
+            VirtualQuery((wchar_t *)ptr, &mbi, sizeof(MEMORY_BASIC_INFORMATION));
+
+            if (!VirtualProtect(mbi.BaseAddress, mbi.RegionSize, PAGE_READWRITE, &mbi.Protect))
+            {
+                return;
+            }
+
+            ZeroMemory((void *)ptr, patternLen);
+
+            DWORD dwOldProtect;
+            VirtualProtect(mbi.BaseAddress, mbi.RegionSize, mbi.Protect, &dwOldProtect);
+
+            return;
+        }
+    }
+}
+
+const WindhawkUtils::SYMBOL_HOOK hooks[] = {
+    {
+        {
+            L"private: static int __cdecl CControlPanelAppletList::s_SortAppletsInCategory(int const *,int const *,__int64)"
+        },
+        &CControlPanelAppletList_s_SortAppletsInCategory_orig,
+        CControlPanelAppletList_s_SortAppletsInCategory_hook,
+        false
+    },
+    {
+        {
+            L"private: bool __cdecl COpenControlPanel::_MapLegacyName(unsigned short const *,unsigned short *,unsigned int,bool *)"
+        },
+        &COpenControlPanel__MapLegacyName_orig,
+        COpenControlPanel__MapLegacyName_hook,
+        false
+    }
+};
+
+using CompareStringOrdinal_t = decltype(&CompareStringOrdinal);
+CompareStringOrdinal_t CompareStringOrdinal_orig;
+int WINAPI CompareStringOrdinal_hook(
+    LPCWCH lpString1,
+    int    cchCount1,
+    LPCWCH lpString2,
+    int    cchCount2,
+    BOOL   bIgnoreCase
+)
+{
+    // masterful gambit, microsoft!
+    if (!lpString1 || !lpString2)
+        return ERROR_INVALID_PARAMETER;
+
+    auto pCompFunc = bIgnoreCase ? wcsicmp : wcscmp;
+    for (UINT i = 0; i < ARRAYSIZE(g_szAppletsToUnhide); i++)
+    {
+        if (0 == pCompFunc(lpString1, g_szAppletsToUnhide[i])
+        || 0 == pCompFunc(lpString2, g_szAppletsToUnhide[i]))
+        {
+            return CSTR_LESS_THAN;
+        }
+    }
+    for (UINT i = 0; i < ARRAYSIZE(g_szCanonicalNames); i++)
+    {
+        if (0 == pCompFunc(lpString1, g_szCanonicalNames[i])
+        || 0 == pCompFunc(lpString2, g_szCanonicalNames[i]))
+        {
+            return CSTR_LESS_THAN;
+        }
+    }
+    return CompareStringOrdinal_orig(
+        lpString1, cchCount1,
+        lpString2, cchCount2,
+        bIgnoreCase
+    );
+}
+
+BOOL Wh_ModInit(void)
+{
+    HMODULE hShell32 = LoadLibraryW(L"shell32.dll");
+    if (!hShell32)
+    {
+        Wh_Log(L"Failed to load shell32.dll");
+        return FALSE;
+    }
+
+    for (size_t i = 0; i < ARRAYSIZE(g_szAppletsToUnhide); i++)
+    {
+        KillStringInModule(
+            hShell32, g_szAppletsToUnhide[i]
+        );
+    }
+
+    Wh_SetFunctionHook(
+        (void *)CompareStringOrdinal,
+        (void *)CompareStringOrdinal_hook,
+        (void **)&CompareStringOrdinal_orig
+    );
+
+    if (!WindhawkUtils::HookSymbols(
+        hShell32,
+        hooks,
+        ARRAYSIZE(hooks)
+    ))
+    {
+        Wh_Log(L"Failed to hook one or more symbol functions");
+        return FALSE;
+    }
+
+    return TRUE;
+}

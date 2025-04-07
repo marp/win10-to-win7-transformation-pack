@@ -1,0 +1,65 @@
+Windows Registry Editor Version 5.00
+
+; Created with Winaero Tweaker 1.55.0.0
+; https://winaero.com
+
+
+[HKEY_CLASSES_ROOT\CLSID\{2684E792-A2C5-4B47-9488-C5D38EEA9321}]
+
+[HKEY_CLASSES_ROOT\CLSID\{2684E792-A2C5-4B47-9488-C5D38EEA9321}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,47,00,65,00,\
+  6e,00,75,00,69,00,6e,00,65,00,43,00,65,00,6e,00,74,00,65,00,72,00,2e,00,64,\
+  00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{4CEB9E2B-71A6-4364-9A0C-0237A1D9FDEF}]
+
+[HKEY_CLASSES_ROOT\CLSID\{4CEB9E2B-71A6-4364-9A0C-0237A1D9FDEF}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,25,\
+  00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,47,00,65,00,\
+  6e,00,75,00,69,00,6e,00,65,00,43,00,65,00,6e,00,74,00,65,00,72,00,2e,00,64,\
+  00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{bbbdd6a3-f35e-449b-a471-4d830c8eda1f}]
+@="Microsoft-Windows-Security-SPP-UX-GC"
+"ResourceFileName"=hex(2):25,00,77,00,69,00,6e,00,64,00,69,00,72,00,25,00,5c,\
+  00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,47,00,65,00,6e,00,\
+  75,00,69,00,6e,00,65,00,43,00,65,00,6e,00,74,00,65,00,72,00,2e,00,64,00,6c,\
+  00,6c,00,00,00
+"MessageFileName"=hex(2):25,00,77,00,69,00,6e,00,64,00,69,00,72,00,25,00,5c,00,\
+  73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,47,00,65,00,6e,00,75,\
+  00,69,00,6e,00,65,00,43,00,65,00,6e,00,74,00,65,00,72,00,2e,00,64,00,6c,00,\
+  6c,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{bbbdd6a3-f35e-449b-a471-4d830c8eda1f}\ChannelReferences]
+"Count"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{bbbdd6a3-f35e-449b-a471-4d830c8eda1f}\ChannelReferences\0]
+@="Microsoft-Windows-Security-SPP-UX-GC/Analytic"
+"Id"=dword:00000010
+"Flags"=dword:00000000
+
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{fb829150-cd7d-44c3-af5b-711a3c31cedc}]
+@="Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging"
+"ResourceFileName"=hex(2):25,00,77,00,69,00,6e,00,64,00,69,00,72,00,25,00,5c,\
+  00,73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,67,00,65,00,6e,00,\
+  75,00,69,00,6e,00,65,00,63,00,65,00,6e,00,74,00,65,00,72,00,2e,00,64,00,6c,\
+  00,6c,00,00,00
+"MessageFileName"=hex(2):25,00,77,00,69,00,6e,00,64,00,69,00,72,00,25,00,5c,00,\
+  73,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,47,00,65,00,6e,00,75,\
+  00,69,00,6e,00,65,00,43,00,65,00,6e,00,74,00,65,00,72,00,2e,00,64,00,6c,00,\
+  6c,00,00,00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{fb829150-cd7d-44c3-af5b-711a3c31cedc}\ChannelReferences]
+"Count"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers\{fb829150-cd7d-44c3-af5b-711a3c31cedc}\ChannelReferences\0]
+@="Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging/Operational"
+"Id"=dword:00000010
+"Flags"=dword:00000000
+

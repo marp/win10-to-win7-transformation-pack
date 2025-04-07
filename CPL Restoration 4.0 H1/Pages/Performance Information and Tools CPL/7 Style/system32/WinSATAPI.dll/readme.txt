@@ -1,0 +1,1 @@
+Import the included files to WinSATAPI.dll using Resource Hacker and overwrite if prompted.

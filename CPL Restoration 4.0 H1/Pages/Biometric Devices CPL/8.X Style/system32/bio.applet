@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<applications xmlns="http://schemas.microsoft.com/windows/cpltasks/v1" 
+              xmlns:sh="http://schemas.microsoft.com/windows/tasks/v1"
+			  xmlns:sh2="http://schemas.microsoft.com/windows/tasks/v2">
+	<application id="{0142E4D0-FB7A-11DC-BA4A-000FFE7AB428}">
+		<sh:task id="{FE77179B-9F89-4932-AFFE-C55035B8515D}">
+		<sh:name>Use your fingerprint with Windows</sh:name>
+		<sh:keywords>accounts;alias;login;useraccount;useracount;users;</sh:keywords>
+		<sh:keywords>added;adding;addon;add-on;adds;</sh:keywords>
+		<sh:keywords>activate;add;begin;enable;intsall;invoke;make;up;setting;setup;start;on;turnon;unlock;</sh:keywords>
+		<sh:keywords>users;</sh:keywords>
+		<sh:keywords>adjust;ajust;alter;change;edit;modify;replace;reset;set;switch;</sh:keywords>
+		<sh:keywords>add;create;make;new;</sh:keywords>
+		<sh:keywords>word;pass-word;passwords;passwork;passwrod;pasword;paswrod;</sh:keywords>
+		<sh:keywords>biometrics;fingerprints;prints;fingers;fngers;fingrs;figerprint;fingerpint;fning;fnig;ger;</sh:keywords>
+		<sh:command>shell:::{8e35b548-f174-4c7d-81e2-8ed33126f6fd}</sh:command>
+	</sh:task>
+	<sh:task id="{D73AD42F-748B-4409-B2E9-005CB6AAF49D}">
+		<sh:name>Stop using your fingerprint to log on to Windows</sh:name>
+		<sh:keywords>accounts;alias;login;useraccount;useracount;users;</sh:keywords>
+		<sh:keywords>cancel;deactivates;delete;deleting;disable;disallow;exit;get;rid;of;prevent;remove;removing;shut;down;off;stop;turn;turnoff;</sh:keywords>
+		<sh:keywords>users;</sh:keywords>
+		<sh:keywords>adjust;ajust;alter;change;edit;modify;replace;reset;set;switch;</sh:keywords>
+		<sh:keywords>word;pass-word;passwords;passwork;passwrod;pasword;paswrod;</sh:keywords>
+		<sh:keywords>biometrics;fingerprints;prints;fingers;fngers;fingrs;figerprint;fingerpint;fning;fnig;ger;</sh:keywords>
+		<sh:command>shell:::{CCFB7955-B4DC-42CE-893D-884D72DD6B19}</sh:command>
+	</sh:task>
+	<sh:task id="{DEF38661-FC6F-49DC-A3F2-7B75FB278A07}">
+		<sh:name>Manage your fingerprint data</sh:name>
+		<sh:keywords>accounts;alias;login;useraccount;useracount;users;</sh:keywords>
+		<sh:keywords>added;adding;addon;add-on;adds;</sh:keywords>
+		<sh:keywords>activate;add;begin;enable;intsall;invoke;make;up;setting;setup;start;on;turnon;unlock;</sh:keywords>
+		<sh:keywords>cancel;deactivates;delete;deleting;disable;disallow;exit;get;rid;of;prevent;remove;removing;shut;down;off;stop;turn;turnoff;</sh:keywords>
+		<sh:keywords>users;</sh:keywords>
+		<sh:keywords>adjust;ajust;alter;change;edit;modify;replace;reset;set;switch;</sh:keywords>
+		<sh:keywords>add;create;make;new;</sh:keywords>
+		<sh:keywords>word;pass-word;passwords;passwork;passwrod;pasword;paswrod;</sh:keywords>
+		<sh:keywords>biometrics;fingerprints;prints;fingers;fngers;fingrs;figerprint;fingerpint;fning;fnig;ger;</sh:keywords>
+		<sh:command>shell:::{8e35b548-f174-4c7d-81e2-8ed33126f6fd}</sh:command>
+	</sh:task>
+	<sh:task id="{FB62D740-D572-4265-8AAB-C2C1662F510B}">
+		<sh:name>Remove your fingerprint data</sh:name>
+		<sh:keywords>accounts;alias;login;useraccount;useracount;users;</sh:keywords>
+		<sh:keywords>cancel;deactivates;delete;deleting;disable;disallow;exit;get;rid;of;prevent;remove;removing;shut;down;off;stop;turn;turnoff;</sh:keywords>
+		<sh:keywords>users;</sh:keywords>
+		<sh:keywords>adjust;ajust;alter;change;edit;modify;replace;reset;set;switch;</sh:keywords>
+		<sh:keywords>word;pass-word;passwords;passwork;passwrod;pasword;paswrod;</sh:keywords>
+		<sh:keywords>biometrics;fingerprints;prints;fingers;fngers;fingrs;figerprint;fingerpint;fning;fnig;ger;</sh:keywords>
+		<sh:command>shell:::{CBC84B69-69EA-439B-B791-DF15F60333CF}</sh:command>
+	</sh:task>
+	<sh:task id="{273EF2D0-F3A7-42A3-A3B4-F584A5A76DB1}">
+		<sh:name>Change biometric settings</sh:name>
+		<sh:keywords>accounts;alias;login;useraccount;useracount;users;</sh:keywords>
+		<sh:keywords>activate;add;begin;enable;intsall;invoke;make;up;setting;setup;start;on;turnon;unlock;</sh:keywords>
+		<sh:keywords>cancel;deactivates;delete;deleting;disable;disallow;exit;get;rid;of;prevent;remove;removing;shut;down;off;stop;turn;turnoff;</sh:keywords>
+		<sh:keywords>users;</sh:keywords>
+		<sh:keywords>adjust;ajust;alter;change;edit;modify;replace;reset;set;switch;</sh:keywords>
+		<sh:keywords>word;pass-word;passwords;passwork;passwrod;pasword;paswrod;</sh:keywords>
+		<sh:keywords>biometrics;fingerprints;prints;fingers;fngers;fingrs;figerprint;fingerpint;fning;fnig;ger;</sh:keywords>
+		<sh2:controlpanel name="Microsoft.Biometrics" page="BiometricsSettings"/>
+	</sh:task>
+	<category id="2">
+		<sh:task idref="{FE77179B-9F89-4932-AFFE-C55035B8515D}"/>
+		<sh:task idref="{DEF38661-FC6F-49DC-A3F2-7B75FB278A07}"/>
+		<sh:task idref="{FB62D740-D572-4265-8AAB-C2C1662F510B}"/>
+	</category>
+	</application>
+</applications>
