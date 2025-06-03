@@ -8,7 +8,7 @@
           |_|
 ==== explorer7 - Ex7forW8, modernized ====
 
-     VERSION: Milestone 2, 15/03/25
+ VERSION: Milestone 2 Update 2, 29/05/25
 
 ==========================================
 
@@ -81,16 +81,15 @@ NOTE: You MUST have a Windows 7 ISO mounted (or Windows 7 installation on anothe
 
               C R E D I T S
 
-- wiktorwiktor12: Original Research, Lead Developer
-- AM_Erizur: Original Research, Developer, Beta Tester
-- Ittr: Original Research, Developer, Beta Tester
-- kfh83: Original Research, Beta Tester, Designer
-- aubymori: Developer, Beta Tester
-- rounak: Developer, Beta Tester
-- kawapure: Developer
-- mishaproductions: Developer
-- amrsatrio: Contributor
-- tihiy_mozg: Original ex7forw8 developer
-- vaporvance, Microsoft: Built-in visual style
+- Tihiy - original developer of Ex7forW8
+- wiktorwiktor12 - original research, development, pre-release testing
+- MishaProductions - development, initial implementation of immersive shell support
+- Isabella Lulamoon - development, pre-release testing
+- Amrsatrio - contributor, development
+- aubymori - development, pre-release testing
+- Ittr - original research, development, pre-release testing
+- Microsoft - the Aero visual style
+- Vruh 3 - original research, designer, pre-release testing
+- Erizur - original research, pre-release testing
 
 ==========================================
