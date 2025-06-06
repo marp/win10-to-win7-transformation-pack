@@ -2,7 +2,7 @@
 
 This transformation pack contains code made by many different people, check credits for details.
 
-This version is not yet tested. Should work Windows 10 22H2.
+This pack is under development. Tested on Windows 10 22H2.
 
 ### Requirements
 For explorer7 you need Windows 7 ISO or DVD, it should match type and language of your system.
