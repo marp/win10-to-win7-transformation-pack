@@ -1,24 +1,28 @@
 # Windows 10 to Windows 7 Transformation Pack
 
-This transformation pack contains code made by many different people, check credits for details.
+This transformation pack is made using the best software and resources available to make it looks exactly like Windows 7. It is also highly customizable unlike other packs.
 
 This pack is under development. Tested on Windows 10 22H2.
 
 ### Requirements
-For explorer7 you need Windows 7 ISO or DVD, it should match type and language of your system.
+For explorer7 and windhawk you need Windows 7 ISO or DVD, it should match type and language of your system.
 
 ### Installation
-1. Install everything from each folder, order is not important.
-2. Windhawk
+1. 
+2. [A lot of useful mods] Windhawk
 2.1. Copy `Windhawk\ResourceRedirect` to `C:\Windows\ResourceRedirect`
 2.2. Open Windhawk, install **Resource Redirect**, go to Resource Redirect settings, set Theme folder to: `C:\Windows\ResourceRedirect\`
-3. Install SecureUx and apply the patch
-3. Copy Themes\ to C:\Windows\Resources\Themes
-4. (Optional) ConsoleLogonHook
-4. (Optional) Branding
-4. (Optional) HackBGRT for bootscreen
-4. (Optional) Install Win7 Games & Apps
-5. Done!
+3. [enable unofficial themes] Install SecureUx and apply the patch
+4. [aero theme] Copy Themes\ to C:\Windows\Resources\Themes
+5. [transparent title bars] Copy DWMBlurGlass to C:\ or to other non user directory and apply the patch 
+6. [taskbar and start menu] Install explorer7 
+7.  ~~(Optional) ConsoleLogonHook~~
+8.  (Optional) Windows 7 Branding
+9.  (Optional) HackBGRT for bootscreen
+10. (Optional) Install Win7 Games & Apps
+11. (Optional) Sounds, Wallpapers and User tiles
+12. (Optional) Control Panel Restoration 4.0 H1
+11. Done!
 
 #### Note
 
@@ -32,11 +36,9 @@ It should restart the computer. Now you can use HackBGRT! It is *still advised* 
 ### Credits
 Here are credits to a few:  
 - Fifty Dinar, a creator of a pack similar to this, his pack contained the Sounds folder which I decided to gather it here.  
-- 2013Windows8.1, made the Windows 7 icon pack.
 - Winaero, for making Windows 7 games and apps work on Windows 10. (Not 8GadgetPack, that belongs to someone/something else). Also made Winaero Tweaker, too.
 - Scritperkid2 on DeviantArt, for exporting Windows 7 cursors.
 - NewInfinitePro and fytuf for making the Windows 7 aero theme.
-- ReimuHakurei for making DLL file in Windows shell to disable the dark context menu of Taskbar
 
 ### Changelog:
 - updated Winaero Twekaer to 1.63.0.0
@@ -52,4 +54,4 @@ Here are credits to a few:
 - added explorer7
 
 ### Todo:
-- Control panel from Windows 7
+- Automatic Setup
