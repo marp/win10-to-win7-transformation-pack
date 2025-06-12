@@ -17,11 +17,10 @@ pause
         echo Success: Administrative permissions confirmed.
     ) else (
         echo Failure: Current permissions inadequate.
+        pause > nul
+        exit
     )
     
-    pause > nul
-    exit
-
 :themes
     cd Themes
     copy.bat
