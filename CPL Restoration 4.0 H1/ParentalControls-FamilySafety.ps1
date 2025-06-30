@@ -1,0 +1,2 @@
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path '.\Pages\Parental Controls-Family Safety CPL\7 Style\system32\*' -Destination 'C:\Windows\System32' -Recurse -Force" -Wait -WindowStyle Hidden
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList 'reg import "Pages\Parental Controls-Family Safety CPL\import as TrustedInstaller\WPCCPL.reg"' -WindowStyle Hidden -Wait

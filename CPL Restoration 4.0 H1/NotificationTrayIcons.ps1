@@ -1,0 +1,2 @@
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path '.\Pages\Notification Tray Icons CPL\Optional\8.X Style\*' -Destination 'C:\Windows\System32' -Recurse -Force" -Wait -WindowStyle Hidden
+Start-Process reg.exe -ArgumentList 'import "Pages\Notification Tray Icons CPL\Notification1.reg"' -WindowStyle Hidden -Wait

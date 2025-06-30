@@ -24,6 +24,33 @@ For explorer7 and windhawk you need Windows 7 ISO or DVD, it should match type a
 12. (Optional) Control Panel Restoration 4.0 H1
 11. Done!
 
+##### Control Panel Restoration 4.0 H1 Automatic Setup
+I've created a PowerShell script that makes the installation of the control panel much easier. It's still not complete, so please go through each step carefully and read every README file.
+
+You can select which control panel pages you want to apply: 
+- Backup and Restore - `BackupAndRestore.ps1`
+- Biometric Devices - `BiometricDevices.ps1`
+- Display - `Display.ps1`
+- Game Controllers - `GameControllers.ps1`
+- Genuine Center - **IN PROGRESS - ERROR**
+- HomeGroups - `HomeGroups.ps1`
+- Language - **TODO - DUMMY** `Language.ps1`
+- Mobility Center - **TODO**
+- Network and Sharing Center - **TODO**
+- Network Map  - **TODO**
+- Notification Tray Icons  - `NotificationTrayIcons.ps1`
+- Parental Controls-Family Safety - `ParentalControls-FamilySafety.ps1`
+- Performance Information and Tools - `PerformanceInformationAndTools.ps1`
+- Personalization - **CAN'T BE DONE** IMPORTANT README
+- ~~Printers - redundant Vista style page `Printers.ps1`~~
+- Recovery - `Recovery.ps1`
+- Region and Input - **TODO - DUMMY** `RegionAndInput.ps1`
+- Security Center and Firewall CPL>) 
+- System - **IN PROGRESS**
+- User Accounts CPL - **CAN'T BE DONE** 
+- Windows Cardspace - **TODO**
+- Windows Update - only for decoration `WindowsUpdate.ps1`
+
 #### Note
 
 Please know that HackBGRT is UEFI-only and you must *disable Secure Boot* in your BIOS setup! Otherwise, it will not work.

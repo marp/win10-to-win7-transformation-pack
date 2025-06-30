@@ -1,0 +1,2 @@
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList 'reg import "Patch CPL Redirection\desktopContextPatch.reg"' -WindowStyle Hidden -Wait
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList '.\..\ViVeTool\vivetool /disable /id:25175482' -WindowStyle Hidden -Wait
