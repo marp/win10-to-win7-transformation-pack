@@ -1,4 +1,4 @@
-# Windows 10 to Windows 7 Transformation Pack
+# ![Windows 7 Logo](Windows.png) Windows 10 to Windows 7 Transformation Pack 
 
 This transformation pack is designed using the best available tools and resources to closely replicate the look and feel of Windows 7. Unlike many other packs, it is highly customizable and fully open-source.
 
@@ -19,11 +19,11 @@ The author is not responsible for any issues or data loss caused by using this p
 5. [transparent title bars] Copy DWMBlurGlass to C:\ or to other non user directory and apply the patch 
 6. [taskbar and start menu] Install explorer7 
 7.  (Optional) AuthUX
+8. (Optional) Control Panel Restoration 4.0 H1
 8.  (Optional) Windows 7 Branding
 9.  (Optional) HackBGRT for bootscreen
 10. (Optional) Install Win7 Games & Apps
 11. (Optional) Sounds, Wallpapers and User tiles
-12. (Optional) Control Panel Restoration 4.0 H1
 11. Done!
 
 ##### Control Panel Restoration 4.0 H1 Automatic Setup
@@ -53,7 +53,7 @@ You can select which control panel pages you want to apply:
 - Windows Cardspace - **TODO**
 - Windows Update - only for decoration `WindowsUpdate.ps1`
 
-#### Note
+#### HackBGRT
 
 Please know that HackBGRT is UEFI-only and you must *disable Secure Boot* in your BIOS setup! Otherwise, it will not work.
 
@@ -61,21 +61,6 @@ You can easily access BIOS setup by doing this (would be recommended to print th
 Go to the start menu, hold left shift key and restart. Go to advanced settings and look for an UEFI firmware option. Click on it.
 Don't be scared of what it shows. If you have a BIOS password, enter it. Go to the boot tab (or something similar) and disable Secure Boot. Save settings and exit.
 It should restart the computer. Now you can use HackBGRT! It is *still advised* you use it with caution, as it can brick your Windows installation.
-
-### Changelog:
-- updated Winaero Twekaer to 1.63.0.0
-- updated OpenShell to 4.4.191
-- added WindHawk, StartIsBack 2.9.20, DWMBlurGlass, Themes
-- removed Windows Blinds, Windows 7 IconPack By 2013Windows8.1,
-- updated version of OpenShell to 4.4.190
-- updated version of 7+ Taskbar Tweaker to 5.14.1
-- updated version of OldNewExplorer to 1.1.19
-- added [Customizer God](https://www.door2windows.com/customizergod/) 1.7.6.1 for changing taskbar icons
-- added taskbar icons to replace (experimental)
-- added classic context menu in taskbar [Windows 10 Taskbar Context Menu Tweaker](https://www.askvg.com/tip-get-rid-of-dark-context-menu-in-windows-10-taskbar/)
-- added explorer7
-- removed 
-
 
 ## 🎯 Roadmap & Work in Progress
 ### ⏳ Planned Features
