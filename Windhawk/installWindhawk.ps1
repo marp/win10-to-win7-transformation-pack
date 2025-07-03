@@ -1,0 +1,1 @@
+./windhawk_setup.exe /S

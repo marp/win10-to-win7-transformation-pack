@@ -14,21 +14,29 @@ The author is not responsible for any issues or data loss caused by using this p
 - To use Explorer7 and Windhawk, you’ll need a Windows 7 ISO or DVD that matches the type and language of your current system. Currently, only the en-US version is supported..
 
 ## Installation
-1. 
-2. [A lot of useful mods] Windhawk
-2.1. Copy `Windhawk\ResourceRedirect` to `C:\Windows\ResourceRedirect`
-2.2. Open Windhawk, install **Resource Redirect**, go to Resource Redirect settings, set Theme folder to: `C:\Windows\ResourceRedirect\`
-3. [enable unofficial themes] Install SecureUx and apply the patch
-4. [aero theme] Copy Themes\ to C:\Windows\Resources\Themes
-5. [transparent title bars] Copy DWMBlurGlass to C:\ or to other non user directory and apply the patch 
-6. [taskbar and start menu] Install explorer7 
-7.  (Optional) AuthUX
-8. (Optional) Control Panel Restoration 4.0 H1
-8.  (Optional) Windows 7 Branding
-9.  (Optional) HackBGRT for bootscreen
-10. (Optional) Install Win7 Games & Apps
-11. (Optional) Sounds, Wallpapers and User tiles
-11. Done!
+1. Windhawk
+2. Theming
+3. Logon screen
+4. Control Panel Restoration 4.0 H1
+5. Windows 7 Logo Branding
+6.  (Optional) HackBGRT for bootscreen
+7. (Optional) Install Win7 Games & Apps
+8. (Optional) Sounds, Wallpapers and User tiles
+9. Done!
+
+#### Windhawk
+Just install this wonderful tool, it will be neccessary in next steps. Use `Windhawk\installWindhawk.ps1` for silent install.
+
+#### Theming
+First you need to enable unofficial themes support. To do so install SecureUx. 
+Then copy aero theme by running `Themes\copy.ps1`.
+To enable transparent title bars copy DWMBlurGlass by running `DWMBlurGlass\copy.ps1` and manually apply the patch.
+To change icons look, install `Resource Redirect` mod for Windhawk. Copy resources with `Windhawk\copyResources.ps1` and set theme path to `C:\Windows\ResourceRedirect\theme.ini`
+For taskbar install Explorer7
+
+
+#### Logon screen
+Install `AuthUX v0.0.1-beta\AuthUX-setup-x64.exe`
 
 ##### Control Panel Restoration 4.0 H1 Automatic Setup
 I've created a PowerShell script that makes the installation of the control panel much easier. It's still not complete, so please go through each step carefully and read every README file.
@@ -56,6 +64,10 @@ You can select which control panel pages you want to apply:
 - User Accounts CPL - **CAN'T BE DONE** 
 - Windows Cardspace - **TODO**
 - Windows Update - only for decoration `WindowsUpdate.ps1`
+
+#### Windows 7 Logo Branding
+Run `Branding\copy.ps1`
+
 
 #### HackBGRT
 

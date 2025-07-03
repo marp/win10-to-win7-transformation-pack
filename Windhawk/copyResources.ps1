@@ -1,0 +1,1 @@
+powershell -ExecutionPolicy Bypass -Command Copy-Item -Path '.\ResourceRedirect' -Destination 'C:\Windows\' -Recurse -Force
