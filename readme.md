@@ -7,6 +7,10 @@ The author is not responsible for any issues or data loss caused by using this p
 
 ## Requirements
 - Windows 10 version 22H2 (earlier versions have not been tested, but may work)
+- You must configure PowerShell to allow script execution. Run PowerShell as an Administrator and execute the following command:
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    ```
 - To use Explorer7 and Windhawk, you’ll need a Windows 7 ISO or DVD that matches the type and language of your current system. Currently, only the en-US version is supported..
 
 ## Installation
@@ -34,7 +38,7 @@ You can select which control panel pages you want to apply:
 - Biometric Devices - `BiometricDevices.ps1`
 - Display - `Display.ps1`
 - Game Controllers - `GameControllers.ps1`
-- Genuine Center - **IN PROGRESS - ERROR**
+- Genuine Center - **IN PROGRESS**
 - HomeGroups - `HomeGroups.ps1`
 - Language - **TODO - DUMMY** `Language.ps1`
 - Mobility Center - **TODO**

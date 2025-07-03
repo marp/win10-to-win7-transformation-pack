@@ -1,0 +1,5 @@
+. "$PSScriptRoot/AuthUX v0.0.1-beta/AuthUX-setup-x64.exe /S"
+. "$PSScriptRoot/SecureUxTheme/SecureUxTheme-setup-x64.exe /S"
+. "$PSScriptRoot/Themes/copy.ps1"
+. "$PSScriptRoot/Windhawk/Windhawk-setup-x64.exe /S"
+. "$PSScriptRoot/Branding/copy.ps1"

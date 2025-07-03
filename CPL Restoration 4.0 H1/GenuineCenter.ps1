@@ -11,7 +11,7 @@ Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList 'reg import "Pages\
 #\ActionCenterCPL.dll.mun" into "ActionCenterCPL.dll.mun" 
 #file located at "C:\Windows\SystemResources".
 #Choose "overwrite" if prompted.
-Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open C:\Windows\SystemResources\ActionCenterCPL.dll.mun', '-resource "Pages\Genuine Center CPL\systemresources\ActionCenterCPL.dll.mun\genuinepage.res"', '-save C:\Windows\SystemResources\ActionCenterCPL.dll.mun', '-action addoverwrite'
+Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open C:\Windows\SystemResources\ActionCenterCPL.dll.mun', '-resource "C:\Users\Marcin\Downloads\win10-to-win7-transformation-pack\CPL Restoration 4.0 H1\Pages\Genuine Center CPL\systemresources\ActionCenterCPL.dll.mun\genuinepage.res"', '-save C:\Windows\SystemResources\ActionCenterCPL.dll.mun', '-action addoverwrite'
 
 # Use Resource Hacker to import the included files from 
 # "CPL Restoration\Pages\Genuine Center CPL\system32\en-US

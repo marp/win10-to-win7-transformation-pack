@@ -7,7 +7,7 @@ if (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 }
 
 # Copy files using robocopy
-robocopy . C:\Windows\Resources\Themes\ /E /xf copy.ps1
+robocopy . C:\Windows\ /E /xf copy.ps1
 
 Write-Host "Files copied successfully!" -ForegroundColor Green
 Write-Host "Press any key to continue..."
