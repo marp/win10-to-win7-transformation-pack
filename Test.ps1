@@ -114,3 +114,13 @@ if (Test-Path $brandingScript) {
 }
 
 Write-Host "Installation complete!"
+
+# Copy and apply Windows 7 sounds
+$soundsScript = "$PSScriptRoot/Sounds/copyAndApplyWindows7Sounds.ps1"
+if (Test-Path $soundsScript) {
+    Write-Host "Copying and applying Windows 7 sounds..."
+    & $soundsScript
+} else {
+    Write-Warning "Windows 7 sounds script not found at: $soundsScript"
+}
+

@@ -33,7 +33,7 @@ Then copy aero theme by running `Themes\copy.ps1`.
 To enable transparent title bars copy DWMBlurGlass by running `DWMBlurGlass\copy.ps1` and manually apply the patch.
 To change icons look, install `Resource Redirect` mod for Windhawk. Copy resources with `Windhawk\copyResources.ps1` and set theme path to `C:\Windows\ResourceRedirect\theme.ini`
 For taskbar install Explorer7
-
+For sounds run `Sounds\copyAndApplyWindows7Sounds.ps1`
 
 #### Logon screen
 Install `AuthUX v0.0.1-beta\AuthUX-setup-x64.exe`
