@@ -46,7 +46,7 @@ You can select which control panel pages you want to apply:
 - Biometric Devices - `BiometricDevices.ps1`
 - Display - `Display.ps1`
 - Game Controllers - `GameControllers.ps1`
-- Genuine Center - **IN PROGRESS**
+- Genuine Center - `GenuineCenter.ps1`
 - HomeGroups - `HomeGroups.ps1`
 - Language - **TODO - DUMMY** `Language.ps1`
 - Mobility Center - **TODO**
@@ -59,9 +59,9 @@ You can select which control panel pages you want to apply:
 - ~~Printers - redundant Vista style page `Printers.ps1`~~
 - Recovery - `Recovery.ps1`
 - Region and Input - **TODO - DUMMY** `RegionAndInput.ps1`
-- Security Center and Firewall CPL>) 
-- System - **IN PROGRESS**
-- User Accounts CPL - **CAN'T BE DONE** 
+- Security Center and Firewall CPL - `SecurityCenterAndFirewall.ps1`
+- System - `System.ps1`
+- User Accounts CPL - `UserAccounts.ps1`
 - Windows Cardspace - **TODO**
 - Windows Update - only for decoration `WindowsUpdate.ps1`
 

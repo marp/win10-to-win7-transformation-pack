@@ -14,14 +14,22 @@ Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList 'reg import "Pages\
 #\ActionCenterCPL.dll.mun" into "ActionCenterCPL.dll.mun" 
 #file located at "C:\Windows\SystemResources".
 #Choose "overwrite" if prompted.
-Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open C:\Windows\SystemResources\ActionCenterCPL.dll.mun', '-resource "Pages\Genuine Center CPL\systemresources\ActionCenterCPL.dll.mun\genuinepage.res"', '-save C:\Windows\SystemResources\ActionCenterCPL.dll.mun', '-action addoverwrite'
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path 'C:\Windows\SystemResources\ActionCenterCPL.dll.mun' -Destination 'Pages\Genuine Center CPL\' -Recurse -Force" -Wait -WindowStyle Hidden
+Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open ".\Pages\Genuine Center CPL\ActionCenterCPL.dll.mun"', '-resource "Pages\Genuine Center CPL\systemresources\ActionCenterCPL.dll.mun\genuinepage.res"', '-save ".\Pages\Genuine Center CPL\ActionCenterCPL.dll.mun"', '-action addoverwrite'
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path 'Pages\Genuine Center CPL\ActionCenterCPL.dll.mun' -Destination 'C:\Windows\SystemResources\' -Recurse -Force" -Wait -WindowStyle Hidden
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Remove-Item -Path 'Pages\Genuine Center CPL\ActionCenterCPL.dll.mun' -Force" -Wait -WindowStyle Hidden
+
 
 # Use Resource Hacker to import the included files from 
 # "CPL Restoration\Pages\Genuine Center CPL\system32\en-US
 # \ActionCenterCPL.dll.mui" into "ActionCenterCPL.dll.mui"
 #  file located at "C:\Windows\System32\en-US". 
 # Choose "overwrite" if prompted.
-Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open C:\Windows\System32\en-US\ActionCenterCPL.dll.mui', '-resource "Pages\Genuine Center CPL\system32\en-US\ActionCenterCPL.dll.mui\StringTable.res"', '-save C:\Windows\System32\en-US\ActionCenterCPL.dll.mui', '-action addoverwrite'
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path 'C:\Windows\System32\en-US\ActionCenterCPL.dll.mui' -Destination 'Pages\Genuine Center CPL\' -Recurse -Force" -Wait -WindowStyle Hidden
+Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open ".\Pages\Genuine Center CPL\ActionCenterCPL.dll.mui"', '-resource "Pages\Genuine Center CPL\system32\en-US\ActionCenterCPL.dll.mui\StringTable.res"', '-save ".\Pages\Genuine Center CPL\ActionCenterCPL.dll.mui"', '-action addoverwrite'
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path 'Pages\Genuine Center CPL\ActionCenterCPL.dll.mui' -Destination 'C:\Windows\System32\en-US\' -Recurse -Force" -Wait -WindowStyle Hidden
+Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Remove-Item -Path 'Pages\Genuine Center CPL\ActionCenterCPL.dll.mui' -Force" -Wait -WindowStyle Hidden
+
 
 # Copy "GenuineCenter.dll" located at
 # "CPL Restoration\Pages\Genuine Center CPL\system32"
@@ -30,3 +38,4 @@ Start-Process ".\..\resource_hacker\ResourceHacker" -ArgumentList '-open C:\Wind
 # to "C:\Windows\System32" and "C:\Windows\System32\en-us" 
 # respectively.
 Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path '.\Pages\Genuine Center CPL\system32\*' -Destination 'C:\Windows\System32\' -Recurse -Force" -Wait -WindowStyle Hidden
+
