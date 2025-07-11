@@ -1,3 +1,6 @@
+#MAKE SURE TO ENABLE .NET 3.5 FROM "WINDOWS FEATURES" BEFORE CONTINUING WITH THE RESTORATION PROCESS
+#PLEASE RESTART YOUR COMPUTER AFTER ENABLING .NET 3.5
+
 Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList 'reg import "Pages\Windows Cardspace CPL\Import as TrustedInstaller\cardspacePlusSVC.reg"' -WindowStyle Hidden -Wait
 
 Start-Process ".\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path '.\Pages\Windows Cardspace CPL\7 Style\system32\*' -Destination 'C:\Windows\System32' -Recurse -Force" -Wait -WindowStyle Hidden

@@ -59,10 +59,10 @@ You can select which control panel pages you want to apply:
 - ~~Printers - redundant Vista style page `Printers.ps1`~~
 - Recovery - `Recovery.ps1`
 - Region and Input - **TODO - DUMMY** `RegionAndInput.ps1`
-- Security Center and Firewall CPL - `SecurityCenterAndFirewall.ps1`
+- Security Center and Firewall CPL - Vista style page `SecurityCenterAndFirewall.ps1`
 - System - `System.ps1`
 - User Accounts CPL - `UserAccounts.ps1`
-- Windows Cardspace - **TODO**
+- Windows Cardspace - **IN PROGRESS**  `WindowsCardspace.ps1`
 - Windows Update - only for decoration `WindowsUpdate.ps1`
 
 #### Windows 7 Logo Branding
