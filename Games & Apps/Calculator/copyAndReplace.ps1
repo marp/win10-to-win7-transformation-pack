@@ -1,0 +1,1 @@
+Start-Process ".\..\..\PowerRun\PowerRun_x64.exe" -ArgumentList "powershell -ExecutionPolicy Bypass -Command Copy-Item -Path '.\*' -Destination 'C:\Windows\System32' -Recurse -Force" -Wait -WindowStyle Hidden
