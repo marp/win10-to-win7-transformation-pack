@@ -14,26 +14,70 @@ The author is not responsible for any issues or data loss caused by using this p
 - To use Explorer7 and Windhawk, you’ll need a Windows 7 ISO or DVD that matches the type and language of your current system. Currently, only the en-US version is supported..
 
 ## Installation
-1. Windhawk
-2. Theming
-3. Logon screen
-4. Control Panel Restoration 4.0 H1
-5. Windows 7 Logo Branding
-6.  (Optional) HackBGRT for bootscreen
-7. (Optional) Install Win7 Games & Apps
-8. (Optional) Sounds, Wallpapers and User tiles
-9. Done!
+### Table of contents
+- [Windhawk](#windhawk)
+- [Theming](#theming)
+- [Start menu and taskbar](#start-menu-and-taskbar)
+- [Sounds](#sounds)
+- [Logon screen](#logon-screen)
+- [Control Panel Restoration 4.0 H1 Automatic Setup](#control-panel-restoration-40-h1-automatic-setup)
+- [Windows 7 Logo Branding](#windows-7-logo-branding)
+- [HackBGRT (optional)](#hackbgrt)
 
 #### Windhawk
 Just install this wonderful tool, it will be neccessary in next steps. Use `Windhawk\installWindhawk.ps1` for silent install.
 
 #### Theming
-First you need to enable unofficial themes support. To do so install SecureUx. 
-Then copy aero theme by running `Themes\copy.ps1`.
-To enable transparent title bars copy DWMBlurGlass by running `DWMBlurGlass\copy.ps1` and manually apply the patch.
-To change icons look, install `Resource Redirect` mod for Windhawk. Copy resources with `Windhawk\copyResources.ps1` and set theme path to `C:\Windows\ResourceRedirect\theme.ini`
-For taskbar install Explorer7
-For sounds run `Sounds\copyAndApplyWindows7Sounds.ps1`
+1. Enable unofficial theme support
+    - Install SecureUxTheme (reboot if prompted).
+
+2. Install the Windows 7 Aero theme
+    - Run PowerShell as Administrator in the repo root:
+      ```powershell
+      .\Themes\copy.ps1
+      ```
+    - Apply the theme in Settings > Personalization > Themes.
+
+3. Enable transparent title bars (DWM Blur Glass)
+    - Copy files:
+      ```powershell
+      .\DWMBlurGlass\copy.ps1
+      ```
+    - Manually apply the patch as instructed in the included README.
+
+4. Apply Windows 7 icons and other resources via Windhawk
+    - In Windhawk, install the “Resource Redirect” mod.
+    - Copy resources:
+      ```powershell
+      .\Windhawk\copyResources.ps1
+      ```
+    - In the mod settings, set Theme path to:
+      ```
+      C:\Windows\ResourceRedirect\theme.ini
+      ```
+
+
+#### Start menu and taskbar
+1. Choose one solution:
+    - Explorer7 — Open-source, experimental, may be unstable.
+    - StartIsBack++ — Proprietary, paid, stable for daily use.
+2. Install your choice (installers are in StartMenuAndTaskBar):
+    - Explorer7:
+      - You will need Windows 7 ISO
+      - Open StartMenuAndTaskBar\Explorer7 directory.
+      - Unzip the archive and install
+    - StartIsBack++:
+      - Open StartMenuAndTaskBar\StartIsBackPlusPlus directory.
+      - Run the installer, activate a license.
+3. Configure the chosen app for a Windows 7-style Start menu and taskbar
+
+#### Sounds
+1. Open PowerShell as Administrator in the repo root.
+2. Apply the Windows 7 sound scheme:
+    ```powershell
+    .\Sounds\copyAndApplyWindows7Sounds.ps1
+    ```
+3. Verify in Control Panel > Sound that the Windows 7 scheme is active.
 
 #### Logon screen
 Install `AuthUX v0.0.1-beta\AuthUX-setup-x64.exe`
