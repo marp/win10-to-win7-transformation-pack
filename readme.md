@@ -1,9 +1,12 @@
 # ![Windows 7 Logo](Windows.png) Windows 10 to Windows 7 Transformation Pack 
 
-This transformation pack is designed using the best available tools and resources to closely replicate the look and feel of Windows 7. Unlike many other packs, it is highly customizable and fully open-source.
+This transformation pack is designed using the best available tools and resources to closely replicate the look and feel of Windows 7. It is highly customizable and built on open-source foundations. However, please note that some included components (such as StartIsBack++) may be proprietary software with their own licensing terms. Review the license of each component before use.
 
-**Warning:** This pack is still in active development.
-The author is not responsible for any issues or data loss caused by using this pack. Please make sure to create a full backup before installation or use.
+## ⚠️ Warning
+
+This pack is still in active development and is not yet complete. You may encounter bugs, compatibility issues, or unexpected behavior during installation or use. The author is not responsible for any issues, data loss, or system instability caused by using this pack.
+
+Before proceeding, please create a full system backup. Use at your own risk.
 
 ## Requirements
 - Windows 10 version 22H2 (earlier versions have not been tested, but may work)
@@ -39,10 +42,7 @@ Just install this wonderful tool, it will be neccessary in next steps. Use `Wind
     - Apply the theme in Settings > Personalization > Themes.
 
 3. Enable transparent title bars (DWM Blur Glass)
-    - Copy files:
-      ```powershell
-      .\DWMBlurGlass\copy.ps1
-      ```
+    - Copy files: `.\ExplorerTransparency\DWMBlurGlass\`
     - Manually apply the patch as instructed in the included README.
 
 4. Apply Windows 7 icons and other resources via Windhawk
@@ -69,6 +69,7 @@ Just install this wonderful tool, it will be neccessary in next steps. Use `Wind
     - StartIsBack++:
       - Open StartMenuAndTaskBar\StartIsBackPlusPlus directory.
       - Run the installer, activate a license.
+      - You will need to install a lot more Windhawk mods
 3. Configure the chosen app for a Windows 7-style Start menu and taskbar
 
 #### Sounds
@@ -140,8 +141,8 @@ This project wouldn't be possible without the incredible work of the open-source
 - [SecureUxTheme](https://github.com/namazso/SecureUxTheme)
 - [HackBGRT](https://github.com/Metabolix/HackBGRT)
 - [Resource Hacker](https://www.angusj.com/resourcehacker/)
-- [PowerRun](https://www.sordum.org/9416/powerrun-v1-7-run-with-highest-privileges/)
+- [PowerRun](https://www.sordum.org/9416/powerrun-v1-8-run-with-highest-privileges/)
 - Fifty Dinar, a creator of a pack similar to this, his pack contained the Sounds folder which I decided to gather it here.  
-- Winaero, for making Windows 7 games and apps work on Windows 10. (Not 8GadgetPack, that belongs to someone/something else). Also made Winaero Tweaker, too.
-- Scritperkid2 on DeviantArt, for exporting Windows 7 cursors.
-- NewInfinitePro and fytuf for making the Windows 7 aero theme.
+- [Winaero](https://winaero.com/), for making Windows 7 games and apps work on Windows 10. (Not 8GadgetPack, that belongs to someone/something else). Also made Winaero Tweaker, too.
+- [Scritperkid2](https://www.deviantart.com/scritperkid2), for exporting Windows 7 cursors.
+- [vaporvance](https://www.deviantart.com/vaporvance), for Aero10 theme
