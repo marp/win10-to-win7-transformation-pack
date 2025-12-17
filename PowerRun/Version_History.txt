@@ -1,9 +1,17 @@
 Author: BlueLife , Velociraptor
 www.sordum.org
 
+########### -- PowerRun v1.8 -- ###########
+(Tuesday, 5 August 2025)
+
+Changelog:
+1. [Fixed] - PowerRun cannot run programs with the "Unblock" checkbox enabled.
+2. [Added] - Code Improvements
+
 ########### -- PowerRun v1.7 -- ###########
 (Wednesday, 17 July 2024)
 
+Changelog:
 1. [Added] - Interface icons enlarged and alternative icon set added.
 2. [Added] - Name column added to list.
 3. [Added] - Cmd parameters usage has been restricted. (against harmful Apps)
@@ -33,7 +41,6 @@ Changelog:
 (Tuesday, February 25, 2020)
 
 Changelog:
-
 1. [Fixed] - Failure to take ownership of TrustedInstaller (Rare)
 2. [Added] - Create a shortcut from listed Items
 3. [Added] - Code Improvements
@@ -42,7 +49,6 @@ Changelog:
 (Tuesday, 13. February 2018)
 
 Changelog:
-
 1. [Fixed] - PowerRun creates an infinite run in Non english systems (rarely) - Critical
 2. [Added] - To seperate Trustedinstaller user "/SYS" parameter suport for command prompt
 3. [Added] - To seperate Trustedinstaller user "TrustedInstaller=1/0" parameter suport for GUI
@@ -52,7 +58,6 @@ TrustedInstaller=0 ; mean PowerRun runs Only in SYSTEM privileges to change it P
 (Tuesday, 06. February 2018)
 
 Changelog:
-
 1. [Fixed] - Parameter with double quotes doesn't work (PowerRun delete it)
 2. [Fixed] - Sometimes command Prompt button opens two cmd
 3. [Fixed] - Processor usage (reduced)
@@ -65,7 +70,6 @@ Changelog:
 ( September 08, 2016)
 
 Changelog:
-
 1. [Fixed] - PowerRun Can't delete some registry files which belong to TrustedInstaller
 2. [Added] - GUI
 3. [Added] - Drag and drop support
