@@ -1,0 +1,1 @@
+%1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("rundll32.exe","""%~dp0OpenGlass.dll"",OpenGlass_RunDLL /startup","","runas",1)(window.close)&&exit

@@ -1,11 +1,11 @@
-Eradicate Immersive Menus by aubymori
 Aerexplorer by aubymori
+Aero Flyout Fix by aubymori
+Aero Tray by aubymori
+Eradicate Immersive Menus by aubymori
 Windows 7 Alt+Tab Loader by aubymori
 Open With - Remove Microsoft Store Menu Item by aubymori
 UIRibbon Caption Icon Fix by Taniko Yamamoto
 Resource Redirect by m417z
 Old This PC Commands by aubymori
 Fix Basic Caption Text by aubymori
-Aero Tray by aubymori
-Aero Flyout Fix by aubymori
 Remove UWP titlebars by Erizur https://github.com/Erizur

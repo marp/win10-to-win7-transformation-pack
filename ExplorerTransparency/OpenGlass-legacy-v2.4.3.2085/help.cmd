@@ -1,0 +1,1 @@
+Rundll32 "%~dp0OpenGlass.dll",OpenGlass_RunDLL /?

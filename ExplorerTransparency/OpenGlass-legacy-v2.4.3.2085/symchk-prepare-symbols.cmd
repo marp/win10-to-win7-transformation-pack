@@ -1,0 +1,2 @@
+symchk.exe "%windir%\System32\uDWM.dll" /s "srv*%~dp0symbols*https://msdl.microsoft.com/download/symbols"
+symchk.exe "%windir%\System32\dwmcore.dll" /s "srv*%~dp0symbols*https://msdl.microsoft.com/download/symbols"
