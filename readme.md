@@ -2,8 +2,22 @@
 
 This transformation pack is designed using the best available tools and resources to closely replicate the look and feel of Windows 7. Unlike many other packs, it is highly customizable and fully open-source.
 
-**Warning:** This pack is still in active development.
-The author is not responsible for any issues or data loss caused by using this pack. Please make sure to create a full backup before installation or use.
+## ⚠️ Development Status
+
+**This project is currently under active development and is not yet complete.** Please be aware of the following:
+
+- **Experimental Nature:** Many features are still being developed, tested, and refined. The project may contain incomplete implementations, bugs, or unexpected behavior.
+- **Potential Issues:** You may encounter errors, system instability, or compatibility problems. Some features may not work as intended or may require manual troubleshooting.
+- **Breaking Changes:** Updates and improvements are ongoing, which means future releases may introduce breaking changes or require reinstallation.
+- **Use at Your Own Risk:** While we strive to make this pack as stable and reliable as possible, the author and contributors are not responsible for any issues, system damage, or data loss that may occur from using this transformation pack.
+
+**Recommendation:** Before proceeding with installation, it is strongly recommended to:
+- Create a full system backup
+- Create a system restore point
+- Test the pack in a non-production environment first
+- Read all documentation and README files carefully
+
+We appreciate your understanding and welcome feedback, bug reports, and contributions to help improve this project!
 
 ## Requirements
 - Windows 10 version 22H2 (earlier versions have not been tested, but may work)
