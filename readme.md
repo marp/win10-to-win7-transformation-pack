@@ -1,6 +1,7 @@
 # ![Windows 7 Logo](Windows.png) Windows 10 to Windows 7 Transformation Pack 
 
-This transformation pack is designed using the best available tools and resources to closely replicate the look and feel of Windows 7. It is highly customizable and built on open-source foundations. However, please note that some included components (such as StartIsBack++) may be proprietary software with their own licensing terms. Review the license of each component before use.
+This transformation pack is designed using the best available tools and resources to closely replicate the look and feel of Windows 7. It is 
+**highly customizable** and **built on open-source foundations**. However, please note that some included components (such as StartIsBack++) may be proprietary software with their own licensing terms. Review the license of each component before use.
 
 ## ⚠️ Warning
 
@@ -8,15 +9,16 @@ This pack is still in active development and is not yet complete. You may encoun
 
 Before proceeding, please create a full system backup. Use at your own risk.
 
-## Requirements
+## ⚙️ Requirements
 - Windows 10 version 22H2 (earlier versions have not been tested, but may work)
-- You must configure PowerShell to allow script execution. Run PowerShell as an Administrator and execute the following command:
+- PowerShell execution policy must be configured. Run PowerShell as Administrator and execute: 
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     ```
-- To use Explorer7 and Windhawk, you’ll need a Windows 7 ISO or DVD that matches the type and language of your current system. Currently, only the en-US version is supported..
+- If you plan to use Explorer7, ensure that you have a Windows 7 ISO or DVD matching the architecture (x86 or x64) and language of your current system. At this time, only the en-US version is supported.
 
-## Installation
+## 📦 Installation
+
 ### Table of contents
 - [Windhawk](#windhawk)
 - [Theming](#theming)
@@ -25,12 +27,15 @@ Before proceeding, please create a full system backup. Use at your own risk.
 - [Logon screen](#logon-screen)
 - [Control Panel Restoration 4.0 H1 Automatic Setup](#control-panel-restoration-40-h1-automatic-setup)
 - [Windows 7 Logo Branding](#windows-7-logo-branding)
-- [HackBGRT (optional)](#hackbgrt)
+- [HackBGRT](#hackbgrt)
 
-#### Windhawk
-Just install this wonderful tool, it will be neccessary in next steps. Use `Windhawk\installWindhawk.ps1` for silent install.
+### Windhawk
+1. Use `Windhawk\installWindhawk.ps1` for silent install.
+2. Run `Windhawk\copyResources.ps1` 
+3. After installing Windhawk, open it from the system tray.
+4. Then install mods listed in `Windhawk\mods.txt`
 
-#### Theming
+### Theming
 1. Enable unofficial theme support
     - Install SecureUxTheme (reboot if prompted).
 
@@ -42,8 +47,8 @@ Just install this wonderful tool, it will be neccessary in next steps. Use `Wind
     - Apply the theme in Settings > Personalization > Themes.
 
 3. Enable transparent title bars (DWM Blur Glass)
-    - Copy files: `.\ExplorerTransparency\DWMBlurGlass\`
-    - Manually apply the patch as instructed in the included README.
+    - Copy directory `ExplorerTransparency\DWMBlurGlass` to `C:\Windows`
+    - Run DWMBlurGlass from there, download symbol files and manually apply the patch
 
 4. Apply Windows 7 icons and other resources via Windhawk
     - In Windhawk, install the “Resource Redirect” mod.
@@ -56,23 +61,22 @@ Just install this wonderful tool, it will be neccessary in next steps. Use `Wind
       C:\Windows\ResourceRedirect\theme.ini
       ```
 
-
-#### Start menu and taskbar
+### Start menu and taskbar
 1. Choose one solution:
-    - Explorer7 — Open-source, experimental, may be unstable.
-    - StartIsBack++ — Proprietary, paid, stable for daily use.
+  - **Explorer7** (recommended) — Proprietary and experimental, but offers a closer Windows 7 experience because it’s more “native.” May be unstable and can **break UWP apps**.
+  - **StartIsBack++** — Proprietary and paid, but stable for daily use. You’ll need additional Windhawk mods to better replicate the Windows 7 Win32 look and feel, but it **won’t break UWP apps**.
 2. Install your choice (installers are in StartMenuAndTaskBar):
     - Explorer7:
-      - You will need Windows 7 ISO
-      - Open StartMenuAndTaskBar\Explorer7 directory.
+      - You will need extracted Windows 7 ISO
+      - Open `StartMenuAndTaskBar\Explorer7` directory.
       - Unzip the archive and install
     - StartIsBack++:
-      - Open StartMenuAndTaskBar\StartIsBackPlusPlus directory.
-      - Run the installer, activate a license.
+      - Open `StartMenuAndTaskBar\StartIsBackPlusPlus` directory.
+      - Run the installer.
       - You will need to install a lot more Windhawk mods
 3. Configure the chosen app for a Windows 7-style Start menu and taskbar
 
-#### Sounds
+### Sounds
 1. Open PowerShell as Administrator in the repo root.
 2. Apply the Windows 7 sound scheme:
     ```powershell
@@ -80,10 +84,10 @@ Just install this wonderful tool, it will be neccessary in next steps. Use `Wind
     ```
 3. Verify in Control Panel > Sound that the Windows 7 scheme is active.
 
-#### Logon screen
+### Logon screen
 Install `AuthUX v0.0.1-beta\AuthUX-setup-x64.exe`
 
-##### Control Panel Restoration 4.0 H1 Automatic Setup
+#### Control Panel Restoration 4.0 H1 Automatic Setup
 I've created a PowerShell script that makes the installation of the control panel much easier. It's still not complete, so please go through each step carefully and read every README file.
 
 You can select which control panel pages you want to apply: 
@@ -110,27 +114,32 @@ You can select which control panel pages you want to apply:
 - Windows Cardspace - **IN PROGRESS**  `WindowsCardspace.ps1`
 - Windows Update - only for decoration `WindowsUpdate.ps1`
 
-#### Windows 7 Logo Branding
+### Windows 7 Logo Branding
 Run `Branding\copy.ps1`
 
+### HackBGRT
 
-#### HackBGRT
-
-Please know that HackBGRT is UEFI-only and you must *disable Secure Boot* in your BIOS setup! Otherwise, it will not work.
+Please know that HackBGRT is UEFI-only and you must **disable Secure Boot** in your BIOS setup! Otherwise, it will not work.
 
 You can easily access BIOS setup by doing this (would be recommended to print this out or remember it yourself):
 Go to the start menu, hold left shift key and restart. Go to advanced settings and look for an UEFI firmware option. Click on it.
 Don't be scared of what it shows. If you have a BIOS password, enter it. Go to the boot tab (or something similar) and disable Secure Boot. Save settings and exit.
 It should restart the computer. Now you can use HackBGRT! It is *still advised* you use it with caution, as it can brick your Windows installation.
 
+Run `HackBGRT 2.5.2 (Use with caution!)\setup.exe`
+
+
 ## 🎯 Roadmap & Work in Progress
+### 🔧 Currently in Development
+- Automation and testing improvements
+
+### 📝 Todo
+- **Control Panel Restoration 4.0 H1 Automatic Setup** - Work is in progress on a unified PowerShell script to simplify the installation of legacy Control Panel pages. The goal is to allow users to select desired modules and apply them with minimal manual steps. Some .ps1 scripts are functional, while others are still in development, marked as TODO, DUMMY, or IN PROGRESS in the respective file headers. Please read all accompanying README files carefully before use.
+
 ### ⏳ Planned Features
 - Automated Setup Script - A unified PowerShell-based installer that can guide users step-by-step through the installation and configuration process.
 - Localized Language Support - Currently only en-US is supported. Support for additional languages (e.g. pl-PL, de-DE, etc.) is planned.
 - Improved Personalization Options - More pre-configured themes and color schemes resembling Windows 7 Aero styles.
-
-### 🔧 Currently in Development
-- **Control Panel Restoration 4.0 H1 Automatic Setup** - Work is in progress on a unified PowerShell script to simplify the installation of legacy Control Panel pages. The goal is to allow users to select desired modules and apply them with minimal manual steps. Some .ps1 scripts are functional, while others are still in development, marked as TODO, DUMMY, or IN PROGRESS in the respective file headers. Please read all accompanying README files carefully before use.
 
 ## 🙏 Credits & External Resources
 This project wouldn't be possible without the incredible work of the open-source and customization community. Special thanks to the following creators and tools:
