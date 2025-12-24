@@ -27,6 +27,7 @@ Before proceeding, please create a full system backup. Use at your own risk.
 - [Logon screen](#logon-screen)
 - [Control Panel Restoration 4.0 H1 Automatic Setup](#control-panel-restoration-40-h1-automatic-setup)
 - [Windows 7 Logo Branding](#windows-7-logo-branding)
+- [Non-XAML UAC](#non-xaml-uac)
 - [HackBGRT](#hackbgrt)
 
 ### Windhawk
@@ -117,6 +118,9 @@ You can select which control panel pages you want to apply:
 ### Windows 7 Logo Branding
 Run `Branding\copy.ps1`
 
+### Non-XAML UAC
+Run `classicuac-1.0.3\NTMU.exe`, select pack.ini from the same directory and apply.
+
 ### HackBGRT
 
 Please know that HackBGRT is UEFI-only and you must **disable Secure Boot** in your BIOS setup! Otherwise, it will not work.
@@ -155,3 +159,4 @@ This project wouldn't be possible without the incredible work of the open-source
 - [Winaero](https://winaero.com/), for making Windows 7 games and apps work on Windows 10. (Not 8GadgetPack, that belongs to someone/something else). Also made Winaero Tweaker, too.
 - [Scritperkid2](https://www.deviantart.com/scritperkid2), for exporting Windows 7 cursors.
 - [vaporvance](https://www.deviantart.com/vaporvance), for Aero10 theme
+- [NT Modding Utility](https://get-ntmu.github.io/#!/)
