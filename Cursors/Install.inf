@@ -1,0 +1,52 @@
+; Windows 7
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+arrow.cur
+help.cur
+working.ani
+busy.ani
+text.cur
+aero_unavail.cur
+vertical.cur
+horizontal.cur
+h2.cur
+h1.cur
+move.cur
+link.cur
+precision.cur
+pen.cur
+alt.cur
+[Strings]
+CUR_DIR       = "Cursors\Windows 7"
+SCHEME_NAME   = "Windows 7"
+pointer       = "arrow.cur"
+help          = "help.cur"
+work          = "working.ani"
+busy          = "busy.ani"
+text          = "text.cur"
+unavailiable  = "aero_unavail.cur"
+vert          = "vertical.cur"
+horz          = "horizontal.cur"
+dgn1          = "h2.cur"
+dgn2          = "h1.cur"
+move          = "move.cur"
+link          = "link.cur"
+cross         = "precision.cur"
+hand          = "pen.cur"
+alternate     = "alt.cur"

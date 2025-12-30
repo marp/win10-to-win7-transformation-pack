@@ -85,6 +85,9 @@ Before proceeding, please create a full system backup. Use at your own risk.
     ```
 3. Verify in Control Panel > Sound that the Windows 7 scheme is active.
 
+### Cursors
+Click with left mouse and choose install on `Cursors\Install.inf` file.
+
 ### Logon screen
 Install `AuthUX v0.0.1-beta\AuthUX-setup-x64.exe`
 
@@ -160,3 +163,4 @@ This project wouldn't be possible without the incredible work of the open-source
 - [Scritperkid2](https://www.deviantart.com/scritperkid2), for exporting Windows 7 cursors.
 - [vaporvance](https://www.deviantart.com/vaporvance), for Aero10 theme
 - [NT Modding Utility](https://get-ntmu.github.io/#!/)
+- [Cursors](https://www.rw-designer.com/cursor-set/windows-7-aero-1)
