@@ -148,6 +148,17 @@ Run `HackBGRT 2.5.2 (Use with caution!)\setup.exe`
 - Localized Language Support - Currently only en-US is supported. Support for additional languages (e.g. pl-PL, de-DE, etc.) is planned.
 - Improved Personalization Options - More pre-configured themes and color schemes resembling Windows 7 Aero styles.
 
+## 🎨 Theming other applications
+- Firefox: 
+  - Echelon: https://echelon-theme.github.io/ (for version 115ESR only)
+  - Photon: https://github.com/zapSNH/zapsCoolPhotonTheme
+- Thunderbird:
+  - coming soon
+- Steam:
+  - Classic Steam Library: https://steambrew.app/theme?id=r2XyxiKzVyAIqsO3VIRF
+  - OldSteam: https://steambrew.app/theme?id=8YTvx3fAAfwQSu6MNOfH
+
+
 ## 🙏 Credits & External Resources
 This project wouldn't be possible without the incredible work of the open-source and customization community. Special thanks to the following creators and tools:
 - [Windhawk](https://github.com/ramensoftware/windhawk)
@@ -162,5 +173,5 @@ This project wouldn't be possible without the incredible work of the open-source
 - [Winaero](https://winaero.com/), for making Windows 7 games and apps work on Windows 10. (Not 8GadgetPack, that belongs to someone/something else). Also made Winaero Tweaker, too.
 - [Scritperkid2](https://www.deviantart.com/scritperkid2), for exporting Windows 7 cursors.
 - [vaporvance](https://www.deviantart.com/vaporvance), for Aero10 theme
-- [NT Modding Utility](https://get-ntmu.github.io/#!/)
+- [NT Modding Utility](https://get-ntmu.github.io/#!/), classic UAC
 - [Cursors](https://www.rw-designer.com/cursor-set/windows-7-aero-1)
