@@ -172,8 +172,6 @@ $escapedbackupDir = $backupDir.Replace("'", "''")
     if (Test-Path $backupDir) {
         Write-Status "OK" "Backup directory exists"
         $sessions = @(Get-ChildItem -Path $backupDir -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match '^\d{4}-\d{4}-\d{6}$' })
-$escapedsessions = $sessions.Replace("'", "''")
-        Write-Status "INFO" "Existing backup sessions: $($sessions.Count)"
         $results += @{ Check = "Backup Directory"; Status = "OK"; Details = "$($sessions.Count) sessions" }
     } else {
         Write-Status "OK" "Backup directory will be created on first install"
