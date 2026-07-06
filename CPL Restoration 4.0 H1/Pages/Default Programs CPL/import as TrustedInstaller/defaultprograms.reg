@@ -1,0 +1,76 @@
+Windows Registry Editor Version 5.00
+
+; Default Programs CPL - CLSID registration for sub-page fix
+; Fixes dead links on the Default Programs page (Issue #5)
+; Sub-pages: pageDefaultProgram, pageFileAssoc, pageSetAssociation
+
+[HKEY_CLASSES_ROOT\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}]
+@="Default Programs"
+"InfoTip"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,\
+  00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,\
+  00,61,00,70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,00,6c,00,2c,00,2d,\
+  00,35,00,31,00,34,00,00,00
+"LocalizedString"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,\
+  00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,61,00,70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,00,6c,00,2c,\
+  00,2d,00,35,00,31,00,33,00,00,00
+"System.ApplicationName"="Microsoft.DefaultPrograms"
+"System.ControlPanel.Category"="9"
+"System.Software.TasksFileUrl"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,\
+  00,52,00,6f,00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,\
+  00,33,00,32,00,5c,00,61,00,70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,\
+  00,6c,00,2c,00,2d,00,35,00,30,00,30,00,00,00
+
+[HKEY_CLASSES_ROOT\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}\DefaultIcon]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,\
+  25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,61,00,\
+  70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,00,6c,00,2c,00,2d,00,31,00,\
+  31,00,00,00
+
+[HKEY_CLASSES_ROOT\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,\
+  25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,00,\
+  68,00,64,00,6f,00,63,00,76,00,77,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}\ShellFolder]
+"Attributes"=dword:a0000000
+"FolderValueFlags"=dword:00000000
+
+; Register canonical name for control.exe /name Microsoft.DefaultPrograms
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ControlPanel\NameSpace\{17cd9488-1228-4b2f-88ce-4298e93e0966}]
+@="Default Programs"
+
+; Extended Properties for sub-page navigation
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Extended Properties\System.ApplicationName]
+"%SystemRoot%\\System32\\appwiz.cpl"="Microsoft.DefaultPrograms"
+
+; 32-bit (Wow6432Node) mirror for Default Programs CLSID
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}]
+@="Default Programs"
+"LocalizedString"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,\
+  00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,\
+  00,5c,00,61,00,70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,00,6c,00,2c,\
+  00,2d,00,35,00,31,00,33,00,00,00
+"System.ApplicationName"="Microsoft.DefaultPrograms"
+"System.ControlPanel.Category"="9"
+"System.Software.TasksFileUrl"=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,\
+  00,52,00,6f,00,6f,00,74,00,25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,\
+  00,33,00,32,00,5c,00,61,00,70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,\
+  00,6c,00,2c,00,2d,00,35,00,30,00,30,00,00,00
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}\DefaultIcon]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,\
+  25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,61,00,\
+  70,00,70,00,77,00,69,00,7a,00,2e,00,63,00,70,00,6c,00,2c,00,2d,00,31,00,\
+  31,00,00,00
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}\InProcServer32]
+@=hex(2):25,00,53,00,79,00,73,00,74,00,65,00,6d,00,52,00,6f,00,6f,00,74,00,\
+  25,00,5c,00,53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,73,00,\
+  68,00,64,00,6f,00,63,00,76,00,77,00,2e,00,64,00,6c,00,6c,00,00,00
+"ThreadingModel"="Apartment"
+
+[HKEY_CLASSES_ROOT\WOW6432Node\CLSID\{17cd9488-1228-4b2f-88ce-4298e93e0966}\ShellFolder]
+"Attributes"=dword:a0000000
+"FolderValueFlags"=dword:00000000

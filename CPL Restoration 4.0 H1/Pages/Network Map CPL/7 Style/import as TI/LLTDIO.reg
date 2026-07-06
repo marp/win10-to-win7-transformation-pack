@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+; Enable LLTDIO driver for Network Map to discover devices
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\LLTD]
+"EnableLLTDIO"=dword:00000001
+"AllowLLTDIOOnDomain"=dword:00000001
+"ProhibitLLTDIOOnPrivateNet"=dword:00000000
+"ProhibitLLTDIOOnPublicNet"=dword:00000000
+
+; Set LLTDIO service to auto-start if present
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LLTDIO]
+"Start"=dword:00000002

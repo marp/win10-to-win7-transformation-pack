@@ -1,4 +1,6 @@
+#requires -RunAsAdministrator
 $registryPath = "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles"
+$escapedregistryPath = $registryPath.Replace("'", "''")
 $connectedNetworkProfile = Get-NetConnectionProfile | Where-Object { $_.IPv4Connectivity -ne 'Disconnected' -or $_.IPv6Connectivity -ne 'Disconnected' }
 if ($connectedNetworkProfile) {
     $connectedNetworkName = $connectedNetworkProfile.Name
@@ -6,6 +8,7 @@ if ($connectedNetworkProfile) {
     foreach ($key in $profileKeys) {
         $networkGuid = $key.PSChildName
         $networkName = Get-ItemProperty -Path "$registryPath\$networkGuid" | Select-Object -ExpandProperty ProfileName
+$escapednetworkName = $networkName.Replace("'", "''")
         if ($networkName -eq $connectedNetworkName) {
             Write-Host "Connected Network Name: $networkName"
             Write-Host "GUID: $networkGuid"

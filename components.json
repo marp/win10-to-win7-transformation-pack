@@ -1,0 +1,21 @@
+[
+    { "Name": "SecureUxTheme", "Func": "Install-SecureUxTheme", "Desc": "Enable custom theme support (foundation)", "Risk": "Low" },
+    { "Name": "Theme", "Func": "Install-Theme", "Desc": "Windows 7 Aero themes (6 accent colors)", "Deps": ["SecureUxTheme"], "Risk": "Low" },
+    { "Name": "DWMBlurGlass", "Func": "Install-DWMBlurGlass", "Desc": "Transparent title bars (Aero Glass)", "Deps": ["SecureUxTheme"], "Risk": "Medium" },
+    { "Name": "AuthUX", "Func": "Install-AuthUX", "Desc": "Windows 7 logon screen", "Risk": "Medium" },
+    { "Name": "Windhawk", "Func": "Install-Windhawk", "Desc": "Windhawk mod platform", "Risk": "Medium" },
+    { "Name": "Resources", "Func": "Install-WindhawkResources", "Desc": "Resource Redirect files + mod list", "Deps": ["Windhawk"], "Risk": "Medium" },
+    { "Name": "Sounds", "Func": "Install-Sounds", "Desc": "Windows 7 sound scheme", "Risk": "Low" },
+    { "Name": "Branding", "Func": "Install-Branding", "Desc": "Windows 7 logo branding", "Risk": "Low" },
+    { "Name": "Cursors", "Func": "Install-Cursors", "Desc": "Windows 7 cursor scheme", "Risk": "Low" },
+    { "Name": "UAC", "Func": "Install-ClassicUAC", "Desc": "Classic (non-XAML) UAC dialog", "Risk": "Medium" },
+    { "Name": "CPL", "Func": "Install-CPL", "Desc": "Control Panel pages restoration (21 pages)", "Deps": ["SecureUxTheme"], "Risk": "High" },
+    { "Name": "UserTiles", "Func": "Install-UserTiles", "Desc": "Windows 7 user account pictures", "Risk": "Low" },
+    { "Name": "OpenWithEx", "Func": "Install-OpenWithEx", "Desc": "Extended Open With dialog", "Risk": "Low" },
+    { "Name": "Winaero", "Func": "Install-Winaero", "Desc": "Winaero Tweaker (legacy settings)", "Risk": "Low" },
+    { "Name": "Games", "Func": "Install-Games", "Desc": "Windows 7 games (extract + install)", "Risk": "Low" },
+    { "Name": "StartMenu", "Func": "Install-StartMenu", "Desc": "Explorer7 or StartIsBack++", "Risk": "High" },
+    { "Name": "HackBGRT", "Func": "Install-HackBGRT", "Desc": "Windows 7 boot screen (UEFI, risky)", "Risk": "Critical" },
+    { "Name": "HomeGroup", "Func": "Install-HomeGroup", "Desc": "Restore HomeGroup (requires stobject.dll from Win10 1607)", "Deps": ["CPL"], "Risk": "High" },
+    { "Name": "DefaultPrograms", "Func": "Install-DefaultPrograms", "Desc": "Fix Default Programs CPL dead links", "Deps": ["CPL"], "Risk": "Medium" }
+]

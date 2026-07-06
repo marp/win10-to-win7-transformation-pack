@@ -1,3 +1,4 @@
+#requires -RunAsAdministrator
 $registryPath = RegistryHKEY_CLASSES_ROOTCLSID{D4901DB7-8296-40be-837C-0046F28B9E49}
 
 if (Test-Path $registryPath) {
